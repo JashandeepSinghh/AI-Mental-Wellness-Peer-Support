@@ -1,0 +1,4 @@
+dimension,score_range_min,score_range_max,record_count,mean,standard_deviation,minimum,first_quartile,median,third_quartile,maximum
+valence,-1.0,1.0,54800.0,-0.001362,0.476609,-1.0,-0.334,0.0,0.333,1.0
+arousal,-1.0,1.0,54800.0,0.01842,0.463864,-1.0,-0.2905,0.0,0.362,1.0
+dominance,-1.0,1.0,54800.0,0.044617,0.414248,-1.0,-0.25,0.017,0.344,1.0

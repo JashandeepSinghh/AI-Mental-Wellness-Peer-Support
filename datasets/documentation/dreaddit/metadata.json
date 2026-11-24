@@ -1,0 +1,81 @@
+{
+    "dataset_name": "Dreaddit",
+    "project": "AI-Powered Mental Wellness and Peer Support Chatbot",
+    "module": "Stress Detection",
+    "source": {
+        "name": "Dreaddit: A Reddit Dataset for Stress Analysis",
+        "url": "https://www.cs.columbia.edu/~eturcan/data/dreaddit.zip",
+        "access_type": "Publicly downloadable research dataset",
+        "license_status": "Verify the original publisher's usage and redistribution terms before redistribution. Public download does not automatically establish an open license."
+    },
+    "dataset_structure": {
+        "original_training_records": 2838,
+        "original_testing_records": 715,
+        "removed_training_placeholders": 4,
+        "final_records": 3549
+    },
+    "final_splits": {
+        "training": 2266,
+        "validation": 568,
+        "testing": 715
+    },
+    "labels": {
+        "0": "non_stress",
+        "1": "stress"
+    },
+    "label_counts": {
+        "stress": 1855,
+        "non_stress": 1694
+    },
+    "preprocessing": {
+        "outer_whitespace_removed": true,
+        "exact_name_error_placeholders_removed": 4,
+        "missing_text_records": 0,
+        "missing_label_records": 0,
+        "duplicate_record_ids": 0,
+        "other_records_preserved": true
+    },
+    "split_methodology": {
+        "method": "StratifiedGroupKFold",
+        "n_splits": 5,
+        "random_state": 42,
+        "selected_fold": 1,
+        "approximate_train_validation_ratio": "80:20",
+        "grouping_column": "post_id",
+        "official_test_set_preserved": true
+    },
+    "leakage_checks": {
+        "post_id_overlap": {
+            "train_validation": 0,
+            "train_test": 0,
+            "validation_test": 0
+        },
+        "exact_text_overlap": {
+            "train_validation": 3,
+            "train_test": 3,
+            "validation_test": 0
+        }
+    },
+    "data_quality_notes": {
+        "zero_confidence_test_records": 98,
+        "zero_confidence_handling": "Retained. Confidence excluded from model input and not used as a sample weight.",
+        "repeated_post_ids": "Multiple text segments from the same Reddit post are preserved as separate labelled records.",
+        "identical_text_overlaps": "Three identical texts occur between training and testing with conflicting labels. Preserved and documented."
+    },
+    "modeling_plan": {
+        "model": "DistilBERT",
+        "input_feature": "text",
+        "target": "label",
+        "output_classes": 2,
+        "loss_function": "CrossEntropyLoss",
+        "excluded_features": [
+            "id",
+            "post_id",
+            "confidence",
+            "precomputed linguistic features",
+            "social and metadata features"
+        ]
+    },
+    "intended_use": "Research-level linguistic stress indicator detection. Not a clinical diagnostic system.",
+    "documentation_date": "2026-11-20"
+}

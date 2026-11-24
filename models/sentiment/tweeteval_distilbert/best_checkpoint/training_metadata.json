@@ -1,0 +1,19 @@
+{
+    "epoch": 3,
+    "best_metric": "validation_macro_f1",
+    "metrics": {
+        "accuracy": 0.738,
+        "macro_f1": 0.7198019524364089,
+        "weighted_f1": 0.7384892507545403,
+        "macro_precision": 0.7174307321673323,
+        "macro_recall": 0.7224101496253396,
+        "validation_loss": 0.650653199493885
+    },
+    "id2label": {
+        "0": "negative",
+        "1": "neutral",
+        "2": "positive"
+    },
+    "num_labels": 3,
+    "model_name": "distilbert-base-uncased"
+}

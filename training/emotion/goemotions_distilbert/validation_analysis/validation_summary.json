@@ -1,0 +1,56 @@
+{
+    "checkpoint": "D:\\Projects\\4AiMentalWellnessPeerSupport\\models\\emotion\\goemotions_distilbert\\best_checkpoint",
+    "validation_records": 5426,
+    "number_of_emotions": 28,
+    "minimum_positive_support": 20,
+    "threshold_bounds": [
+        0.05,
+        0.95
+    ],
+    "default_threshold_metrics": {
+        "macro_f1": 0.35896539944029365,
+        "micro_f1": 0.5538491258572394,
+        "macro_precision": 0.5450704774390306,
+        "macro_recall": 0.30347121182069714,
+        "no_prediction_rate": 0.2851087357169185,
+        "average_predictions_per_example": 0.7322152598599336
+    },
+    "calibrated_threshold_metrics": {
+        "macro_f1": 0.4770395446380044,
+        "micro_f1": 0.5953252604900028,
+        "macro_precision": 0.4830462373635914,
+        "macro_recall": 0.499553421031539,
+        "no_prediction_rate": 0.014375230372281608,
+        "average_predictions_per_example": 1.4419461850350166
+    },
+    "thresholds": {
+        "admiration": 0.4516892731189728,
+        "amusement": 0.25423112511634827,
+        "anger": 0.2603894770145416,
+        "annoyance": 0.20963142812252045,
+        "approval": 0.17412921786308289,
+        "caring": 0.14426936209201813,
+        "confusion": 0.21272224187850952,
+        "curiosity": 0.2520156800746918,
+        "desire": 0.3242354094982147,
+        "disappointment": 0.1672186702489853,
+        "disapproval": 0.18053968250751495,
+        "disgust": 0.26817408204078674,
+        "embarrassment": 0.08404061198234558,
+        "excitement": 0.20149880647659302,
+        "fear": 0.2833845913410187,
+        "gratitude": 0.6116139888763428,
+        "grief": 0.5,
+        "joy": 0.21833586692810059,
+        "love": 0.31447142362594604,
+        "nervousness": 0.07864238321781158,
+        "optimism": 0.31880319118499756,
+        "pride": 0.5,
+        "realization": 0.09203285723924637,
+        "relief": 0.5,
+        "remorse": 0.26961395144462585,
+        "sadness": 0.26473838090896606,
+        "surprise": 0.23934932053089142,
+        "neutral": 0.2158462107181549
+    }
+}

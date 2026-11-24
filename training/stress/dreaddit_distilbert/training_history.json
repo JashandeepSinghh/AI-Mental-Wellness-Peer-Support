@@ -1,0 +1,118 @@
+[
+    {
+        "epoch": 1,
+        "duration_seconds": 11.8,
+        "global_step": 71,
+        "train": {
+            "accuracy": 0.6862312444836717,
+            "macro_precision": 0.6987671833044866,
+            "macro_recall": 0.6788978217549646,
+            "macro_f1": 0.6752329784289721,
+            "weighted_f1": 0.6781341996904037,
+            "non_stress_f1": 0.6154678204434829,
+            "stress_f1": 0.7349981364144614,
+            "non_stress_support": 1078,
+            "stress_support": 1188,
+            "loss": 0.5715646233776925
+        },
+        "validation": {
+            "accuracy": 0.772887323943662,
+            "macro_precision": 0.7808657156910969,
+            "macro_recall": 0.7767710663683818,
+            "macro_f1": 0.7725143203092255,
+            "weighted_f1": 0.7720602289281725,
+            "non_stress_f1": 0.7817258883248731,
+            "stress_f1": 0.763302752293578,
+            "non_stress_support": 270,
+            "stress_support": 298,
+            "loss": 0.46976163652208114
+        }
+    },
+    {
+        "epoch": 2,
+        "duration_seconds": 8.81,
+        "global_step": 142,
+        "train": {
+            "accuracy": 0.8446601941747572,
+            "macro_precision": 0.8446433827443465,
+            "macro_recall": 0.8437779152064866,
+            "macro_f1": 0.8441150719199499,
+            "weighted_f1": 0.8445625603380753,
+            "non_stress_f1": 0.8348968105065666,
+            "stress_f1": 0.8533333333333334,
+            "non_stress_support": 1078,
+            "stress_support": 1188,
+            "loss": 0.37461895464171824
+        },
+        "validation": {
+            "accuracy": 0.7922535211267606,
+            "macro_precision": 0.8004568106312293,
+            "macro_recall": 0.7877454635843897,
+            "macro_f1": 0.7886664900929534,
+            "weighted_f1": 0.7900237450787183,
+            "non_stress_f1": 0.7611336032388664,
+            "stress_f1": 0.8161993769470405,
+            "non_stress_support": 270,
+            "stress_support": 298,
+            "loss": 0.4351146486070421
+        }
+    },
+    {
+        "epoch": 3,
+        "duration_seconds": 8.68,
+        "global_step": 213,
+        "train": {
+            "accuracy": 0.8976169461606355,
+            "macro_precision": 0.8974016744244167,
+            "macro_recall": 0.897332165189308,
+            "macro_f1": 0.8973662160019928,
+            "weighted_f1": 0.8976124688363741,
+            "non_stress_f1": 0.8922934076137419,
+            "stress_f1": 0.9024390243902439,
+            "non_stress_support": 1078,
+            "stress_support": 1188,
+            "loss": 0.2615062781202961
+        },
+        "validation": {
+            "accuracy": 0.7816901408450704,
+            "macro_precision": 0.7811940298507463,
+            "macro_recall": 0.7809843400447427,
+            "macro_f1": 0.7810794345463814,
+            "weighted_f1": 0.7816494270918245,
+            "non_stress_f1": 0.7695167286245354,
+            "stress_f1": 0.7926421404682275,
+            "non_stress_support": 270,
+            "stress_support": 298,
+            "loss": 0.49825935893588597
+        }
+    },
+    {
+        "epoch": 4,
+        "duration_seconds": 8.68,
+        "global_step": 284,
+        "train": {
+            "accuracy": 0.9452780229479258,
+            "macro_precision": 0.9451166385609893,
+            "macro_recall": 0.9451917130488559,
+            "macro_f1": 0.9451534346835856,
+            "weighted_f1": 0.9452803301380062,
+            "non_stress_f1": 0.9425393883225208,
+            "stress_f1": 0.9477674810446504,
+            "non_stress_support": 1078,
+            "stress_support": 1188,
+            "loss": 0.17020972555791827
+        },
+        "validation": {
+            "accuracy": 0.7852112676056338,
+            "macro_precision": 0.7930855481727574,
+            "macro_recall": 0.7806860551826995,
+            "macro_f1": 0.7815026422994942,
+            "weighted_f1": 0.7829059059288443,
+            "non_stress_f1": 0.7530364372469636,
+            "stress_f1": 0.8099688473520249,
+            "non_stress_support": 270,
+            "stress_support": 298,
+            "loss": 0.6139632993274264
+        }
+    }
+]

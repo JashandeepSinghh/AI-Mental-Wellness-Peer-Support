@@ -1,0 +1,238 @@
+{
+    "model_tokenizer": "distilbert-base-uncased",
+    "dataset_directory": "D:\\Projects\\4AiMentalWellnessPeerSupport\\datasets\\processed\\fig_loneliness\\standardized",
+    "candidate_max_lengths": [
+        128,
+        160,
+        192,
+        224,
+        256,
+        320,
+        384
+    ],
+    "dataset_statistics": [
+        {
+            "split": "train",
+            "records": 3943,
+            "minimum_tokens": 27,
+            "maximum_tokens": 3614,
+            "mean_tokens": 178.5671,
+            "median_tokens": 122.0,
+            "p75_tokens": 212.0,
+            "p90_tokens": 356.0,
+            "p95_tokens": 499.9,
+            "p99_tokens": 921.38
+        },
+        {
+            "split": "validation",
+            "records": 1126,
+            "minimum_tokens": 14,
+            "maximum_tokens": 3248,
+            "mean_tokens": 169.2975,
+            "median_tokens": 119.0,
+            "p75_tokens": 204.0,
+            "p90_tokens": 344.0,
+            "p95_tokens": 460.5,
+            "p99_tokens": 825.25
+        },
+        {
+            "split": "test",
+            "records": 564,
+            "minimum_tokens": 27,
+            "maximum_tokens": 1731,
+            "mean_tokens": 168.8085,
+            "median_tokens": 111.5,
+            "p75_tokens": 210.0,
+            "p90_tokens": 344.1,
+            "p95_tokens": 484.7,
+            "p99_tokens": 886.0
+        }
+    ],
+    "truncation_statistics": [
+        {
+            "split": "train",
+            "max_length": 128,
+            "truncated_records": 1878,
+            "total_records": 3943,
+            "truncation_percentage": 47.6287
+        },
+        {
+            "split": "train",
+            "max_length": 160,
+            "truncated_records": 1463,
+            "total_records": 3943,
+            "truncation_percentage": 37.1037
+        },
+        {
+            "split": "train",
+            "max_length": 192,
+            "truncated_records": 1147,
+            "total_records": 3943,
+            "truncation_percentage": 29.0895
+        },
+        {
+            "split": "train",
+            "max_length": 224,
+            "truncated_records": 914,
+            "total_records": 3943,
+            "truncation_percentage": 23.1803
+        },
+        {
+            "split": "train",
+            "max_length": 256,
+            "truncated_records": 730,
+            "total_records": 3943,
+            "truncation_percentage": 18.5138
+        },
+        {
+            "split": "train",
+            "max_length": 320,
+            "truncated_records": 487,
+            "total_records": 3943,
+            "truncation_percentage": 12.351
+        },
+        {
+            "split": "train",
+            "max_length": 384,
+            "truncated_records": 332,
+            "total_records": 3943,
+            "truncation_percentage": 8.42
+        },
+        {
+            "split": "validation",
+            "max_length": 128,
+            "truncated_records": 515,
+            "total_records": 1126,
+            "truncation_percentage": 45.7371
+        },
+        {
+            "split": "validation",
+            "max_length": 160,
+            "truncated_records": 392,
+            "total_records": 1126,
+            "truncation_percentage": 34.8135
+        },
+        {
+            "split": "validation",
+            "max_length": 192,
+            "truncated_records": 308,
+            "total_records": 1126,
+            "truncation_percentage": 27.3535
+        },
+        {
+            "split": "validation",
+            "max_length": 224,
+            "truncated_records": 245,
+            "total_records": 1126,
+            "truncation_percentage": 21.7584
+        },
+        {
+            "split": "validation",
+            "max_length": 256,
+            "truncated_records": 196,
+            "total_records": 1126,
+            "truncation_percentage": 17.4067
+        },
+        {
+            "split": "validation",
+            "max_length": 320,
+            "truncated_records": 131,
+            "total_records": 1126,
+            "truncation_percentage": 11.6341
+        },
+        {
+            "split": "validation",
+            "max_length": 384,
+            "truncated_records": 85,
+            "total_records": 1126,
+            "truncation_percentage": 7.5488
+        },
+        {
+            "split": "test",
+            "max_length": 128,
+            "truncated_records": 250,
+            "total_records": 564,
+            "truncation_percentage": 44.3262
+        },
+        {
+            "split": "test",
+            "max_length": 160,
+            "truncated_records": 192,
+            "total_records": 564,
+            "truncation_percentage": 34.0426
+        },
+        {
+            "split": "test",
+            "max_length": 192,
+            "truncated_records": 159,
+            "total_records": 564,
+            "truncation_percentage": 28.1915
+        },
+        {
+            "split": "test",
+            "max_length": 224,
+            "truncated_records": 122,
+            "total_records": 564,
+            "truncation_percentage": 21.6312
+        },
+        {
+            "split": "test",
+            "max_length": 256,
+            "truncated_records": 96,
+            "total_records": 564,
+            "truncation_percentage": 17.0213
+        },
+        {
+            "split": "test",
+            "max_length": 320,
+            "truncated_records": 66,
+            "total_records": 564,
+            "truncation_percentage": 11.7021
+        },
+        {
+            "split": "test",
+            "max_length": 384,
+            "truncated_records": 44,
+            "total_records": 564,
+            "truncation_percentage": 7.8014
+        }
+    ],
+    "label_statistics": [
+        {
+            "split": "train",
+            "label": 0,
+            "count": 2103,
+            "percentage": 53.335
+        },
+        {
+            "split": "train",
+            "label": 1,
+            "count": 1840,
+            "percentage": 46.665
+        },
+        {
+            "split": "validation",
+            "label": 0,
+            "count": 590,
+            "percentage": 52.3979
+        },
+        {
+            "split": "validation",
+            "label": 1,
+            "count": 536,
+            "percentage": 47.6021
+        },
+        {
+            "split": "test",
+            "label": 0,
+            "count": 307,
+            "percentage": 54.4326
+        },
+        {
+            "split": "test",
+            "label": 1,
+            "count": 257,
+            "percentage": 45.5674
+        }
+    ]
+}

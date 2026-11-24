@@ -1,0 +1,64 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    container_name: mindbridge-backend
+    restart: unless-stopped
+    ports:
+      - "8001:8000"
+    environment:
+      - ENVIRONMENT=development
+      - DEBUG=false
+      - HOST=0.0.0.0
+      - PORT=8000
+      - API_PREFIX=/api/v1
+      - SQLITE_DATABASE_PATH=/app/backend/data/mental_wellness.db
+      - FRONTEND_BASE_URL=http://localhost:3000
+      - CORS_ORIGINS=["http://localhost:3000","http://127.0.0.1:3000","http://localhost:5173","http://127.0.0.1:5173","http://mindbridge-frontend"]
+      - JWT_SECRET_KEY=${JWT_SECRET_KEY:-insecure_dev_secret_key_change_me_in_production_env}
+      - REFRESH_SECRET_KEY=${REFRESH_SECRET_KEY:-insecure_dev_refresh_key_change_me_in_production_env}
+      - EMAIL_VERIFICATION_SECRET_KEY=${EMAIL_VERIFICATION_SECRET_KEY:-insecure_dev_email_key_change_me_in_prod}
+      - MODEL_ROOT=/app/models
+      - EMOTION_MODEL_PATH=/app/models/emotion/goemotions_distilbert/best_checkpoint
+      - SENTIMENT_MODEL_PATH=/app/models/sentiment/tweeteval_distilbert/best_checkpoint
+      - STRESS_MODEL_PATH=/app/models/stress/dreaddit_distilbert/best_checkpoint
+      - LONELINESS_MODEL_PATH=/app/models/loneliness/fig_loneliness_distilbert/best_checkpoint
+      - SENTIMENT_BILSTM_MODEL_PATH=/app/models/sentiment/tweeteval_bilstm/best_checkpoint.pt
+      - SENTIMENT_BILSTM_VOCAB_PATH=/app/models/sentiment/tweeteval_bilstm/vocabulary.json
+      - VAD_LEXICON_PATH=/app/datasets/processed/nrc_vad/standardized/nrc_vad.csv
+      - INFERENCE_DEVICE=cpu
+    volumes:
+      - ./backend/data:/app/backend/data
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/api/v1/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 5
+      start_period: 45s
+    networks:
+      - wellness-net
+
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    container_name: mindbridge-frontend
+    restart: unless-stopped
+    ports:
+      - "3000:80"
+    depends_on:
+      backend:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "wget", "-q", "-O", "-", "http://127.0.0.1/"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+    networks:
+      - wellness-net
+
+networks:
+  wellness-net:
+    driver: bridge

@@ -1,0 +1,122 @@
+{
+    "module_name": "Valence-Arousal-Dominance Analysis",
+    "module_version": "1.0.0",
+    "total_checks": 22,
+    "passed_checks": 22,
+    "failed_checks": 0,
+    "validation_status": "PASSED",
+    "checks": [
+        {
+            "check": "Configuration validation",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "check": "Lexicon row count",
+            "passed": true,
+            "details": "Loaded 54,800 entries"
+        },
+        {
+            "check": "Unique lexicon terms",
+            "passed": true,
+            "details": "Unique terms: 54,800"
+        },
+        {
+            "check": "Lookup dictionary size",
+            "passed": true,
+            "details": "Lookup entries: 54,800"
+        },
+        {
+            "check": "Lexicon score ranges",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "check": "Multiword entries retained",
+            "passed": true,
+            "details": "Multiword entries: 10,073"
+        },
+        {
+            "check": "Contraction-preserving tokenization",
+            "passed": true,
+            "details": "Tokens: ['i', \"don't\", 'feel', 'happy', 'today']"
+        },
+        {
+            "check": "Zero-vector classification",
+            "passed": true,
+            "details": "Zero-valued terms are recognized."
+        },
+        {
+            "check": "Zero-vector exclusion from averaging",
+            "passed": true,
+            "details": "Calculated valence: 0.985"
+        },
+        {
+            "check": "Longest-match-first phrase handling",
+            "passed": true,
+            "details": "Matched terms: ['fear of failure']"
+        },
+        {
+            "check": "Real-text analysis execution",
+            "passed": true,
+            "details": "Matched terms: 9"
+        },
+        {
+            "check": "Three VAD output dimensions",
+            "passed": true,
+            "details": "{'valence': 0.2088, 'arousal': 0.2313, 'dominance': 0.117}"
+        },
+        {
+            "check": "Coverage range",
+            "passed": true,
+            "details": "Coverage: 75.00%"
+        },
+        {
+            "check": "Zero-vector accounting",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "check": "Matched terms retained in output",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "check": "Unmatched tokens retained",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "check": "No-match handling",
+            "passed": true,
+            "details": "Unavailable scores are returned as None."
+        },
+        {
+            "check": "No clinical diagnosis claim",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "check": "No confirmed psychological-state claim",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "check": "Disclaimer included",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "check": "Empty text rejected",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "check": "Non-string input rejected",
+            "passed": true,
+            "details": ""
+        }
+    ],
+    "clinical_validation": false,
+    "real_world_accuracy_established": false
+}

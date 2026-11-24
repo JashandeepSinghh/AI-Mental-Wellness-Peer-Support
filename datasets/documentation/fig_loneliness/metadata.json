@@ -1,0 +1,82 @@
+{
+    "dataset_name": "FIG-Loneliness",
+    "project_module": "Social Isolation / Loneliness Indicators",
+    "source": "https://huggingface.co/datasets/FIG-Loneliness/FIG-Loneliness",
+    "license": "CC BY-NC 4.0",
+    "usage_restriction": "Non-commercial use with attribution. Commercial use is not permitted under this license.",
+    "total_records": 5633,
+    "total_unique_ids": 5633,
+    "number_of_classes": 2,
+    "labels": {
+        "0": "non_lonely",
+        "1": "lonely"
+    },
+    "label_encoding": {
+        "[1, 0]": {
+            "label": 0,
+            "name": "non_lonely"
+        },
+        "[0, 1]": {
+            "label": 1,
+            "name": "lonely"
+        }
+    },
+    "model_input": "text",
+    "model_target": "label",
+    "metadata_columns": [
+        "unique_id",
+        "idx",
+        "lonely",
+        "context_pri",
+        "interaction",
+        "interpersonal_pri",
+        "temporal"
+    ],
+    "split_strategy": "Original official train, validation, and test splits preserved without re-splitting.",
+    "splits": {
+        "train": {
+            "records": 3943,
+            "lonely": 1840,
+            "non_lonely": 2103,
+            "unique_ids": 3943
+        },
+        "validation": {
+            "records": 1126,
+            "lonely": 536,
+            "non_lonely": 590,
+            "unique_ids": 1126
+        },
+        "test": {
+            "records": 564,
+            "lonely": 257,
+            "non_lonely": 307,
+            "unique_ids": 564
+        }
+    },
+    "quality_checks": {
+        "missing_values": 0,
+        "invalid_label_vectors": 0,
+        "duplicate_unique_ids": 0,
+        "cross_split_id_overlap": 0,
+        "cross_split_exact_text_overlap": 0,
+        "records_removed_during_cleaning": 0,
+        "records_with_outer_whitespace_cleaned": 402,
+        "duplicate_text_groups_in_training": 2,
+        "duplicate_text_records_in_training": 4
+    },
+    "text_statistics": {
+        "maximum_characters": 16196,
+        "minimum_characters": 44,
+        "mean_characters": 739.85,
+        "median_characters": 506.0
+    },
+    "ethical_interpretation": "The dataset captures loneliness expressed in Reddit text. It does not establish a person's objective social isolation, mental health diagnosis, or clinical condition.",
+    "preprocessing": [
+        "Removed leading and trailing whitespace from text.",
+        "Preserved all records.",
+        "Standardized the original one-hot loneliness labels.",
+        "Serialized annotation vectors as JSON strings in CSV files.",
+        "Preserved official dataset splits.",
+        "Did not truncate long posts during cleaning."
+    ]
+}

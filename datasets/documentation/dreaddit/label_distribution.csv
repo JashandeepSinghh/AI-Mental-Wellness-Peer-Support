@@ -1,0 +1,7 @@
+split,label,count,percentage
+train,stress,1188,52.43
+train,non_stress,1078,47.57
+validation,stress,298,52.46
+validation,non_stress,270,47.54
+test,stress,369,51.61
+test,non_stress,346,48.39

@@ -1,0 +1,103 @@
+{
+    "module": "Rumination Detection",
+    "validation_type": "Engineering module validation",
+    "timestamp": "2026-11-20T07:58:50.725370",
+    "total_tests": 13,
+    "passed": 13,
+    "failed": 0,
+    "pass_percentage": 100.0,
+    "results": [
+        {
+            "test_id": "SINGLE001",
+            "category": "Single-message",
+            "description": "Repetitive-thinking input",
+            "status": "PASS",
+            "details": "Output structure and data types validated."
+        },
+        {
+            "test_id": "SINGLE002",
+            "category": "Single-message",
+            "description": "Ordinary neutral input",
+            "status": "PASS",
+            "details": "Output structure and data types validated."
+        },
+        {
+            "test_id": "SINGLE003",
+            "category": "Single-message",
+            "description": "Past-focused input",
+            "status": "PASS",
+            "details": "Output structure and data types validated."
+        },
+        {
+            "test_id": "SINGLE004",
+            "category": "Single-message",
+            "description": "Future-worry input",
+            "status": "PASS",
+            "details": "Output structure and data types validated."
+        },
+        {
+            "test_id": "CONV001",
+            "category": "Conversation",
+            "description": "Complete conversation output validation",
+            "status": "PASS",
+            "details": "Message count, result structure, signal type and semantic output validated."
+        },
+        {
+            "test_id": "SEM001",
+            "category": "Semantic",
+            "description": "Semantic analysis returns structured output",
+            "status": "PASS",
+            "details": "Semantic analysis returned a non-empty dictionary."
+        },
+        {
+            "test_id": "INPUT001",
+            "category": "Input handling",
+            "description": "Non-string input",
+            "status": "PASS",
+            "details": "Expected exception raised correctly."
+        },
+        {
+            "test_id": "INPUT002",
+            "category": "Input handling",
+            "description": "Text shorter than minimum length",
+            "status": "PASS",
+            "details": "Expected exception raised correctly."
+        },
+        {
+            "test_id": "INPUT003",
+            "category": "Input handling",
+            "description": "Text exceeding maximum length",
+            "status": "PASS",
+            "details": "Expected exception raised correctly."
+        },
+        {
+            "test_id": "INPUT004",
+            "category": "Input handling",
+            "description": "Conversation with fewer than two messages",
+            "status": "PASS",
+            "details": "Expected exception raised correctly."
+        },
+        {
+            "test_id": "INPUT005",
+            "category": "Input handling",
+            "description": "Conversation with non-list input",
+            "status": "PASS",
+            "details": "Expected exception raised correctly."
+        },
+        {
+            "test_id": "INPUT006",
+            "category": "Input handling",
+            "description": "Conversation with empty message",
+            "status": "PASS",
+            "details": "Expected exception raised correctly."
+        },
+        {
+            "test_id": "CONS001",
+            "category": "Consistency",
+            "description": "Repeated identical input gives consistent outputs",
+            "status": "PASS",
+            "details": "Signal and message count remained consistent."
+        }
+    ],
+    "qualification": "Constructed test cases validate implementation behavior only. They do not establish clinical validity or real-world detection accuracy."
+}

@@ -1,0 +1,59 @@
+{
+    "message_count": 3,
+    "messages_with_indicators": 1,
+    "recurring_rumination_signal": true,
+    "semantic_analysis": {
+        "semantic_analysis_enabled": true,
+        "semantic_analysis_successful": true,
+        "semantic_comparisons": [
+            {
+                "message_1_index": 0,
+                "message_2_index": 1,
+                "message_1": "I made a mistake during my examination and I feel bad about it.",
+                "message_2": "I keep remembering what happened during that examination.",
+                "similarity_score": 0.5309
+            },
+            {
+                "message_1_index": 0,
+                "message_2_index": 2,
+                "message_1": "I made a mistake during my examination and I feel bad about it.",
+                "message_2": "I cannot stop thinking about that mistake.",
+                "similarity_score": 0.5127
+            },
+            {
+                "message_1_index": 1,
+                "message_2_index": 2,
+                "message_1": "I keep remembering what happened during that examination.",
+                "message_2": "I cannot stop thinking about that mistake.",
+                "similarity_score": 0.3388
+            }
+        ],
+        "indicator_semantic_candidates": [
+            {
+                "first_message_id": "MSG001",
+                "second_message_id": "MSG003",
+                "first_message_has_indicator": false,
+                "second_message_has_indicator": true,
+                "indicator_categories": [
+                    "repetitive_thoughts"
+                ],
+                "similarity_score": 0.5127,
+                "evidence_role": "Ranked semantic candidate for contextual review"
+            },
+            {
+                "first_message_id": "MSG002",
+                "second_message_id": "MSG003",
+                "first_message_has_indicator": false,
+                "second_message_has_indicator": true,
+                "indicator_categories": [
+                    "repetitive_thoughts"
+                ],
+                "similarity_score": 0.3388,
+                "evidence_role": "Ranked semantic candidate for contextual review"
+            }
+        ],
+        "semantic_candidate_count": 2,
+        "error": null
+    },
+    "interpretation": "A rumination-related linguistic indicator shares topic keywords with another conversation message. Semantic comparisons are provided as additional contextual evidence. Human contextual review is recommended."
+}

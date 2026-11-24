@@ -1,0 +1,10 @@
+split,label_id,sentiment,records,percentage
+training,0,negative,7093,15.5497
+training,1,neutral,20673,45.3206
+training,2,positive,17849,39.1297
+validation,0,negative,312,15.6
+validation,1,neutral,869,43.45
+validation,2,positive,819,40.95
+testing,0,negative,3972,32.3347
+testing,1,neutral,5937,48.3312
+testing,2,positive,2375,19.3341

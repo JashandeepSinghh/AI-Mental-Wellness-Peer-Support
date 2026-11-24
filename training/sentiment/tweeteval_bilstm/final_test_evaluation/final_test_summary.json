@@ -1,0 +1,16 @@
+{
+    "dataset": "TweetEval Official Test",
+    "records": 12284,
+    "checkpoint_epoch": 2,
+    "best_validation_macro_f1": 0.6678100886940802,
+    "accuracy": 0.6041191794203843,
+    "macro_f1": 0.5943181094112234,
+    "weighted_f1": 0.6030463572236089,
+    "macro_precision": 0.5962918028097931,
+    "macro_recall": 0.6050842947251863,
+    "mean_confidence": 0.6675159335136414,
+    "median_confidence": 0.6559252738952637,
+    "confidence_p25": 0.5466760396957397,
+    "confidence_p75": 0.7807861566543579,
+    "confidence_p95": 0.9205181002616882
+}

@@ -1,0 +1,107 @@
+{
+    "module": "Rumination Detection",
+    "analysis_type": "conversation_level",
+    "total_tests": 7,
+    "metrics": {
+        "true_positive": 2,
+        "true_negative": 5,
+        "false_positive": 0,
+        "false_negative": 0,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0
+    },
+    "results": [
+        {
+            "id": "CONV001",
+            "group": "repeated_rumination",
+            "expected": true,
+            "predicted": true,
+            "status": "PASS",
+            "message_count": 3,
+            "messages_with_indicators": 1,
+            "repeated_keyword_count": 2,
+            "repeated_pair_count": 2,
+            "error": null
+        },
+        {
+            "id": "CONV002",
+            "group": "ordinary_topic_repetition",
+            "expected": false,
+            "predicted": false,
+            "status": "PASS",
+            "message_count": 3,
+            "messages_with_indicators": 0,
+            "repeated_keyword_count": 1,
+            "repeated_pair_count": 3,
+            "error": null
+        },
+        {
+            "id": "CONV003",
+            "group": "isolated_rumination_language",
+            "expected": false,
+            "predicted": false,
+            "status": "PASS",
+            "message_count": 2,
+            "messages_with_indicators": 1,
+            "repeated_keyword_count": 0,
+            "repeated_pair_count": 0,
+            "error": null
+        },
+        {
+            "id": "CONV004",
+            "group": "unrelated_conversation",
+            "expected": false,
+            "predicted": false,
+            "status": "PASS",
+            "message_count": 3,
+            "messages_with_indicators": 0,
+            "repeated_keyword_count": 0,
+            "repeated_pair_count": 0,
+            "error": null
+        },
+        {
+            "id": "CONV005",
+            "group": "multiple_rumination_indicators",
+            "expected": true,
+            "predicted": true,
+            "status": "PASS",
+            "message_count": 3,
+            "messages_with_indicators": 3,
+            "repeated_keyword_count": 1,
+            "repeated_pair_count": 3,
+            "error": null
+        },
+        {
+            "id": "CONV006",
+            "group": "third_person_conversation",
+            "expected": false,
+            "predicted": false,
+            "status": "PASS",
+            "message_count": 2,
+            "messages_with_indicators": 0,
+            "repeated_keyword_count": 2,
+            "repeated_pair_count": 1,
+            "error": null
+        },
+        {
+            "id": "CONV007",
+            "group": "negated_expressions",
+            "expected": false,
+            "predicted": false,
+            "status": "PASS",
+            "message_count": 2,
+            "messages_with_indicators": 0,
+            "repeated_keyword_count": 2,
+            "repeated_pair_count": 1,
+            "error": null
+        }
+    ],
+    "limitations": [
+        "The test cases are manually constructed.",
+        "The test set is small and not representative of real users.",
+        "Lexical overlap does not establish semantic equivalence.",
+        "Passing these tests does not establish clinical validity."
+    ]
+}

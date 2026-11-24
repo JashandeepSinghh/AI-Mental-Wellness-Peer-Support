@@ -1,0 +1,31 @@
+﻿id,category,expected,message_1,message_2,lexical_jaccard,semantic_cosine
+SC001,same_concern,same_concern,I keep thinking about the mistake I made in my examination.,I cannot forget the error I made during my test.,0.125,0.5384
+SC002,same_concern,same_concern,I am constantly worried about failing my upcoming exams.,The thought of not passing my examinations keeps bothering me.,0.0,0.6957
+SC003,same_concern,same_concern,I feel that nobody understands what I am going through.,I feel completely alone because no one understands my situation.,0.1111,0.6618
+SC004,same_concern,same_concern,I regret the way I behaved during that argument.,I wish I had handled our disagreement differently.,0.0,0.4285
+SC005,same_concern,same_concern,I cannot stop blaming myself for what happened yesterday.,I keep holding myself responsible for yesterday's incident.,0.125,0.6886
+SC006,same_concern,same_concern,I am scared that my friends will eventually abandon me.,I keep worrying that the people close to me will leave.,0.0,0.5581
+DC001,different_concern,different_concern,I keep regretting the wrong answer I wrote in my examination.,I need to know the examination timetable for next semester.,0.1,0.2217
+DC002,different_concern,different_concern,I am worried that my relationship is falling apart.,I need to buy a birthday present for my partner.,0.0,0.2744
+DC003,different_concern,different_concern,I cannot stop worrying about my financial problems.,I need to open a new savings account at the bank.,0.0,0.2246
+DC004,different_concern,different_concern,I feel lonely because my friends have stopped talking to me.,I am organizing a football match with my friends.,0.125,0.1889
+DC005,different_concern,different_concern,I am afraid that I will lose my current job.,I need to prepare a presentation for my workplace.,0.0,0.0712
+DC006,different_concern,different_concern,I keep worrying about my health and future illness.,I need to schedule my routine medical checkup.,0.0,0.3863
+OR001,ordinary_repetition,ordinary_repetition,I played football with my friends yesterday.,We are planning another football match this weekend.,0.125,0.4321
+OR002,ordinary_repetition,ordinary_repetition,I attended my mathematics lecture today.,Tomorrow I have another mathematics lecture.,0.3333,0.7825
+OR003,ordinary_repetition,ordinary_repetition,I cooked dinner with my family.,We are planning to cook dinner together tomorrow.,0.1429,0.5435
+OR004,ordinary_repetition,ordinary_repetition,I watched a documentary about wildlife.,I want to watch another wildlife documentary tonight.,0.2857,0.7589
+OR005,ordinary_repetition,ordinary_repetition,I went shopping for some new clothes.,I might go shopping again this weekend.,0.1111,0.5523
+OR006,ordinary_repetition,ordinary_repetition,I practiced Python programming this morning.,I will continue practicing Python programming tomorrow.,0.2857,0.8215
+UT001,unrelated_topics,unrelated,I enjoy playing football with my friends.,I am unable to sleep because I keep worrying about my future.,0.0,0.0485
+UT002,unrelated_topics,unrelated,The weather is beautiful today.,I regret the decision I made in my relationship.,0.0,0.0361
+UT003,unrelated_topics,unrelated,I bought a new laptop for programming.,I feel lonely even when I am surrounded by people.,0.0,0.0327
+UT004,unrelated_topics,unrelated,I watched an interesting movie last night.,I keep blaming myself for my past decisions.,0.0,0.1988
+UT005,unrelated_topics,unrelated,My favorite restaurant serves excellent food.,I am anxious about my upcoming job interview.,0.0,0.1046
+UT006,unrelated_topics,unrelated,I enjoy listening to classical music.,I cannot stop thinking about my previous failure.,0.0,0.0489
+AM001,ambiguous,ambiguous,I keep thinking about everything.,There are so many things on my mind.,0.0,0.65
+AM002,ambiguous,ambiguous,Things have been difficult recently.,I am not sure what to do anymore.,0.0,0.3343
+AM003,ambiguous,ambiguous,I keep remembering what happened.,That situation is still on my mind.,0.0,0.3502
+AM004,ambiguous,ambiguous,I have been feeling strange these days.,Something has been bothering me lately.,0.0,0.4756
+AM005,ambiguous,ambiguous,I cannot get it out of my head.,It keeps coming back whenever I am alone.,0.0,0.2965
+AM006,ambiguous,ambiguous,I have been thinking a lot lately.,My mind has been occupied with many things.,0.0,0.5387

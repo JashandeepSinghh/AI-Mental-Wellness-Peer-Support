@@ -1,0 +1,2451 @@
+{
+  "models_forensics": {
+    "emotion/goemotions_distilbert": {
+      "path": "models\\emotion\\goemotions_distilbert",
+      "files": [
+        "best_checkpoint\\config.json",
+        "best_checkpoint\\model.safetensors",
+        "best_checkpoint\\tokenizer.json",
+        "best_checkpoint\\tokenizer_config.json",
+        "best_checkpoint\\training_metadata.json"
+      ],
+      "config": {
+        "model_type": "distilbert",
+        "architectures": [
+          "DistilBertForSequenceClassification"
+        ],
+        "id2label": {
+          "0": "admiration",
+          "1": "amusement",
+          "2": "anger",
+          "3": "annoyance",
+          "4": "approval",
+          "5": "caring",
+          "6": "confusion",
+          "7": "curiosity",
+          "8": "desire",
+          "9": "disappointment",
+          "10": "disapproval",
+          "11": "disgust",
+          "12": "embarrassment",
+          "13": "excitement",
+          "14": "fear",
+          "15": "gratitude",
+          "16": "grief",
+          "17": "joy",
+          "18": "love",
+          "19": "nervousness",
+          "20": "optimism",
+          "21": "pride",
+          "22": "realization",
+          "23": "relief",
+          "24": "remorse",
+          "25": "sadness",
+          "26": "surprise",
+          "27": "neutral"
+        },
+        "label2id": {
+          "admiration": 0,
+          "amusement": 1,
+          "anger": 2,
+          "annoyance": 3,
+          "approval": 4,
+          "caring": 5,
+          "confusion": 6,
+          "curiosity": 7,
+          "desire": 8,
+          "disappointment": 9,
+          "disapproval": 10,
+          "disgust": 11,
+          "embarrassment": 12,
+          "excitement": 13,
+          "fear": 14,
+          "gratitude": 15,
+          "grief": 16,
+          "joy": 17,
+          "love": 18,
+          "nervousness": 19,
+          "neutral": 27,
+          "optimism": 20,
+          "pride": 21,
+          "realization": 22,
+          "relief": 23,
+          "remorse": 24,
+          "sadness": 25,
+          "surprise": 26
+        },
+        "num_labels": 28,
+        "_name_or_path": null
+      },
+      "training_metadata": {
+        "epoch": 3,
+        "selection_metric": "validation_macro_f1",
+        "validation_metrics": {
+          "macro_f1": 0.35896539944029365,
+          "micro_f1": 0.5538491258572394,
+          "macro_precision": 0.5450704774390306,
+          "macro_recall": 0.30347121182069714,
+          "no_prediction_rate": 0.2851087357169185,
+          "per_label": {
+            "admiration": {
+              "precision": 0.7560975609756098,
+              "recall": 0.6987704918032787,
+              "f1": 0.7263045793397231,
+              "support": 488
+            },
+            "amusement": {
+              "precision": 0.7580645161290323,
+              "recall": 0.7755775577557755,
+              "f1": 0.766721044045677,
+              "support": 303
+            },
+            "anger": {
+              "precision": 0.5144927536231884,
+              "recall": 0.3641025641025641,
+              "f1": 0.4264264264264264,
+              "support": 195
+            },
+            "annoyance": {
+              "precision": 0.7777777777777778,
+              "recall": 0.0231023102310231,
+              "f1": 0.04487179487179487,
+              "support": 303
+            },
+            "approval": {
+              "precision": 0.6804123711340206,
+              "recall": 0.16624685138539042,
+              "f1": 0.26720647773279355,
+              "support": 397
+            },
+            "caring": {
+              "precision": 0.6923076923076923,
+              "recall": 0.17647058823529413,
+              "f1": 0.28125,
+              "support": 153
+            },
+            "confusion": {
+              "precision": 0.6585365853658537,
+              "recall": 0.17763157894736842,
+              "f1": 0.27979274611398963,
+              "support": 152
+            },
+            "curiosity": {
+              "precision": 0.5714285714285714,
+              "recall": 0.3548387096774194,
+              "f1": 0.43781094527363185,
+              "support": 248
+            },
+            "desire": {
+              "precision": 0.8108108108108109,
+              "recall": 0.38961038961038963,
+              "f1": 0.5263157894736842,
+              "support": 77
+            },
+            "disappointment": {
+              "precision": 0.3333333333333333,
+              "recall": 0.006134969325153374,
+              "f1": 0.012048192771084338,
+              "support": 163
+            },
+            "disapproval": {
+              "precision": 0.5588235294117647,
+              "recall": 0.13013698630136986,
+              "f1": 0.2111111111111111,
+              "support": 292
+            },
+            "disgust": {
+              "precision": 0.8695652173913043,
+              "recall": 0.20618556701030927,
+              "f1": 0.3333333333333333,
+              "support": 97
+            },
+            "embarrassment": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 35
+            },
+            "excitement": {
+              "precision": 0.5625,
+              "recall": 0.09375,
+              "f1": 0.16071428571428573,
+              "support": 96
+            },
+            "fear": {
+              "precision": 0.8,
+              "recall": 0.3111111111111111,
+              "f1": 0.448,
+              "support": 90
+            },
+            "gratitude": {
+              "precision": 0.9323529411764706,
+              "recall": 0.8854748603351955,
+              "f1": 0.9083094555873925,
+              "support": 358
+            },
+            "grief": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 13
+            },
+            "joy": {
+              "precision": 0.7128712871287128,
+              "recall": 0.4186046511627907,
+              "f1": 0.5274725274725275,
+              "support": 172
+            },
+            "love": {
+              "precision": 0.7435897435897436,
+              "recall": 0.8055555555555556,
+              "f1": 0.7733333333333333,
+              "support": 252
+            },
+            "nervousness": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 21
+            },
+            "optimism": {
+              "precision": 0.752,
+              "recall": 0.44976076555023925,
+              "f1": 0.562874251497006,
+              "support": 209
+            },
+            "pride": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 15
+            },
+            "realization": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 127
+            },
+            "relief": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 18
+            },
+            "remorse": {
+              "precision": 0.7719298245614035,
+              "recall": 0.6470588235294118,
+              "f1": 0.704,
+              "support": 68
+            },
+            "sadness": {
+              "precision": 0.6521739130434783,
+              "recall": 0.4195804195804196,
+              "f1": 0.5106382978723404,
+              "support": 143
+            },
+            "surprise": {
+              "precision": 0.654320987654321,
+              "recall": 0.4108527131782946,
+              "f1": 0.5047619047619047,
+              "support": 129
+            },
+            "neutral": {
+              "precision": 0.698583951449764,
+              "recall": 0.5866364665911665,
+              "f1": 0.6377346875961835,
+              "support": 1766
+            }
+          },
+          "loss": 0.08661200931941808,
+          "examples": 5426
+        },
+        "labels": [
+          "admiration",
+          "amusement",
+          "anger",
+          "annoyance",
+          "approval",
+          "caring",
+          "confusion",
+          "curiosity",
+          "desire",
+          "disappointment",
+          "disapproval",
+          "disgust",
+          "embarrassment",
+          "excitement",
+          "fear",
+          "gratitude",
+          "grief",
+          "joy",
+          "love",
+          "nervousness",
+          "optimism",
+          "pride",
+          "realization",
+          "relief",
+          "remorse",
+          "sadness",
+          "surprise",
+          "neutral"
+        ],
+        "model_name": "distilbert-base-uncased",
+        "num_labels": 28,
+        "threshold": 0.5,
+        "random_seed": 42
+      }
+    },
+    "sentiment/tweeteval_bilstm": {
+      "path": "models\\sentiment\\tweeteval_bilstm",
+      "files": [
+        "best_checkpoint.pt",
+        "vocabulary.json"
+      ],
+      "checkpoint_keys": [
+        "epoch",
+        "model_state_dict",
+        "vocabulary_size",
+        "vocabulary",
+        "metrics",
+        "best_metric",
+        "model_config",
+        "label_mapping"
+      ],
+      "vocabulary_size": 20153,
+      "num_param_tensors": 19,
+      "epoch": "2",
+      "metrics": "{'accuracy': 0.695, 'macro_f1': 0.6678100886940802, 'weighted_f1': 0.6942169199693206, 'macro_precision': 0.6734364855610279, 'macro_recall': 0.6631245571118989, 'validation_loss': 0.7015829138755798}"
+    },
+    "sentiment/tweeteval_distilbert": {
+      "path": "models\\sentiment\\tweeteval_distilbert",
+      "files": [
+        "best_checkpoint\\config.json",
+        "best_checkpoint\\model.safetensors",
+        "best_checkpoint\\tokenizer.json",
+        "best_checkpoint\\tokenizer_config.json",
+        "best_checkpoint\\training_metadata.json"
+      ],
+      "config": {
+        "model_type": "distilbert",
+        "architectures": [
+          "DistilBertForSequenceClassification"
+        ],
+        "id2label": {
+          "0": "negative",
+          "1": "neutral",
+          "2": "positive"
+        },
+        "label2id": {
+          "negative": 0,
+          "neutral": 1,
+          "positive": 2
+        },
+        "num_labels": 3,
+        "_name_or_path": null
+      },
+      "training_metadata": {
+        "epoch": 3,
+        "best_metric": "validation_macro_f1",
+        "metrics": {
+          "accuracy": 0.738,
+          "macro_f1": 0.7198019524364089,
+          "weighted_f1": 0.7384892507545403,
+          "macro_precision": 0.7174307321673323,
+          "macro_recall": 0.7224101496253396,
+          "validation_loss": 0.650653199493885
+        },
+        "id2label": {
+          "0": "negative",
+          "1": "neutral",
+          "2": "positive"
+        },
+        "num_labels": 3,
+        "model_name": "distilbert-base-uncased"
+      }
+    },
+    "stress/dreaddit_distilbert": {
+      "path": "models\\stress\\dreaddit_distilbert",
+      "files": [
+        "best_checkpoint\\best_checkpoint.pt",
+        "best_checkpoint\\tokenizer.json",
+        "best_checkpoint\\tokenizer_config.json"
+      ],
+      "checkpoint_keys": [
+        "epoch",
+        "model_state_dict",
+        "optimizer_state_dict",
+        "validation_metrics",
+        "model_name",
+        "random_seed"
+      ],
+      "num_param_tensors": 104,
+      "epoch": "2"
+    },
+    "loneliness/fig_loneliness_distilbert": {
+      "path": "models\\loneliness\\fig_loneliness_distilbert",
+      "files": [
+        "best_checkpoint\\best_checkpoint.pt",
+        "best_checkpoint\\tokenizer.json",
+        "best_checkpoint\\tokenizer_config.json"
+      ],
+      "checkpoint_keys": [
+        "epoch",
+        "model_state_dict",
+        "optimizer_state_dict",
+        "scheduler_state_dict",
+        "scaler_state_dict",
+        "best_validation_macro_f1",
+        "validation_metrics",
+        "model_name",
+        "max_length",
+        "label2id",
+        "id2label",
+        "random_seed"
+      ],
+      "num_param_tensors": 104,
+      "epoch": "4"
+    }
+  },
+  "scripts_analysis": {},
+  "datasets_analysis": {
+    "raw\\dreaddit\\dreaddit-test.csv": {
+      "size_mb": 0.724,
+      "suffix": ".csv",
+      "line_count": 716
+    },
+    "raw\\dreaddit\\dreaddit-train.csv": {
+      "size_mb": 2.596,
+      "suffix": ".csv",
+      "line_count": 2839
+    },
+    "raw\\fig_loneliness\\source_repo\\dev_set\\dataset_info.json": {
+      "size_mb": 0.002,
+      "suffix": ".json"
+    },
+    "raw\\fig_loneliness\\source_repo\\dev_set\\state.json": {
+      "size_mb": 0.0,
+      "suffix": ".json"
+    },
+    "raw\\fig_loneliness\\source_repo\\test_set\\dataset_info.json": {
+      "size_mb": 0.002,
+      "suffix": ".json"
+    },
+    "raw\\fig_loneliness\\source_repo\\test_set\\state.json": {
+      "size_mb": 0.0,
+      "suffix": ".json"
+    },
+    "raw\\fig_loneliness\\source_repo\\train_set\\dataset_info.json": {
+      "size_mb": 0.002,
+      "suffix": ".json"
+    },
+    "raw\\fig_loneliness\\source_repo\\train_set\\state.json": {
+      "size_mb": 0.0,
+      "suffix": ".json"
+    },
+    "raw\\goemotions\\goemotions_1.csv": {
+      "size_mb": 13.518,
+      "suffix": ".csv",
+      "line_count": 70001
+    },
+    "raw\\goemotions\\goemotions_2.csv": {
+      "size_mb": 13.517,
+      "suffix": ".csv",
+      "line_count": 70001
+    },
+    "raw\\goemotions\\goemotions_3.csv": {
+      "size_mb": 13.728,
+      "suffix": ".csv",
+      "line_count": 71226
+    },
+    "raw\\goemotions\\official_splits\\dev.tsv": {
+      "size_mb": 0.419,
+      "suffix": ".tsv",
+      "line_count": 5426
+    },
+    "raw\\goemotions\\official_splits\\emotions.txt": {
+      "size_mb": 0.0,
+      "suffix": ".txt"
+    },
+    "raw\\goemotions\\official_splits\\test.tsv": {
+      "size_mb": 0.416,
+      "suffix": ".tsv",
+      "line_count": 5427
+    },
+    "raw\\goemotions\\official_splits\\train.tsv": {
+      "size_mb": 3.356,
+      "suffix": ".tsv",
+      "line_count": 43410
+    },
+    "raw\\nrc_vad\\extracted\\NRC-VAD-Lexicon-v2.1\\NRC-VAD-Lexicon-v2.1.txt": {
+      "size_mb": 1.538,
+      "suffix": ".txt"
+    },
+    "raw\\nrc_vad\\extracted\\NRC-VAD-Lexicon-v2.1\\README.txt": {
+      "size_mb": 0.025,
+      "suffix": ".txt"
+    },
+    "raw\\nrc_vad\\extracted\\NRC-VAD-Lexicon-v2.1\\MWE\\mwe-arousal-NRC-VAD-Lexicon-v2.1.txt": {
+      "size_mb": 0.174,
+      "suffix": ".txt"
+    },
+    "raw\\nrc_vad\\extracted\\NRC-VAD-Lexicon-v2.1\\MWE\\mwe-dominance-NRC-VAD-Lexicon-v2.1.txt": {
+      "size_mb": 0.174,
+      "suffix": ".txt"
+    },
+    "raw\\nrc_vad\\extracted\\NRC-VAD-Lexicon-v2.1\\MWE\\mwe-NRC-VAD-Lexicon-v2.1.txt": {
+      "size_mb": 0.298,
+      "suffix": ".txt"
+    },
+    "raw\\nrc_vad\\extracted\\NRC-VAD-Lexicon-v2.1\\MWE\\mwe-valence-NRC-VAD-Lexicon-v2.1.txt": {
+      "size_mb": 0.174,
+      "suffix": ".txt"
+    },
+    "raw\\nrc_vad\\extracted\\NRC-VAD-Lexicon-v2.1\\OneFilePerDimension\\arousal-NRC-VAD-Lexicon-v2.1.txt": {
+      "size_mb": 0.865,
+      "suffix": ".txt"
+    },
+    "raw\\nrc_vad\\extracted\\NRC-VAD-Lexicon-v2.1\\OneFilePerDimension\\dominance-NRC-VAD-Lexicon-v2.1.txt": {
+      "size_mb": 0.863,
+      "suffix": ".txt"
+    },
+    "raw\\nrc_vad\\extracted\\NRC-VAD-Lexicon-v2.1\\OneFilePerDimension\\valence-NRC-VAD-Lexicon-v2.1.txt": {
+      "size_mb": 0.863,
+      "suffix": ".txt"
+    },
+    "raw\\nrc_vad\\extracted\\NRC-VAD-Lexicon-v2.1\\OneFilePerDimension\\PolarSubset\\arousal-polar-NRC-VAD-Lexicon-v2.1.txt": {
+      "size_mb": 0.433,
+      "suffix": ".txt"
+    },
+    "raw\\nrc_vad\\extracted\\NRC-VAD-Lexicon-v2.1\\OneFilePerDimension\\PolarSubset\\dominance-polar-NRC-VAD-Lexicon-v2.1.txt": {
+      "size_mb": 0.408,
+      "suffix": ".txt"
+    },
+    "raw\\nrc_vad\\extracted\\NRC-VAD-Lexicon-v2.1\\OneFilePerDimension\\PolarSubset\\valence-polar-NRC-VAD-Lexicon-v2.1.txt": {
+      "size_mb": 0.467,
+      "suffix": ".txt"
+    },
+    "raw\\nrc_vad\\extracted\\NRC-VAD-Lexicon-v2.1\\Unigrams\\unigrams-arousal-NRC-VAD-Lexicon-v2.1.txt": {
+      "size_mb": 0.691,
+      "suffix": ".txt"
+    },
+    "raw\\nrc_vad\\extracted\\NRC-VAD-Lexicon-v2.1\\Unigrams\\unigrams-dominance-NRC-VAD-Lexicon-v2.1.txt": {
+      "size_mb": 0.689,
+      "suffix": ".txt"
+    },
+    "raw\\nrc_vad\\extracted\\NRC-VAD-Lexicon-v2.1\\Unigrams\\unigrams-NRC-VAD-Lexicon-v2.1.txt": {
+      "size_mb": 1.239,
+      "suffix": ".txt"
+    },
+    "raw\\nrc_vad\\extracted\\NRC-VAD-Lexicon-v2.1\\Unigrams\\unigrams-valence-NRC-VAD-Lexicon-v2.1.txt": {
+      "size_mb": 0.689,
+      "suffix": ".txt"
+    },
+    "raw\\tweeteval\\sentiment\\mapping.txt": {
+      "size_mb": 0.0,
+      "suffix": ".txt"
+    },
+    "raw\\tweeteval\\sentiment\\test_labels.txt": {
+      "size_mb": 0.023,
+      "suffix": ".txt"
+    },
+    "raw\\tweeteval\\sentiment\\test_text.txt": {
+      "size_mb": 1.103,
+      "suffix": ".txt"
+    },
+    "raw\\tweeteval\\sentiment\\train_labels.txt": {
+      "size_mb": 0.087,
+      "suffix": ".txt"
+    },
+    "raw\\tweeteval\\sentiment\\train_text.txt": {
+      "size_mb": 4.74,
+      "suffix": ".txt"
+    },
+    "raw\\tweeteval\\sentiment\\val_labels.txt": {
+      "size_mb": 0.004,
+      "suffix": ".txt"
+    },
+    "raw\\tweeteval\\sentiment\\val_text.txt": {
+      "size_mb": 0.209,
+      "suffix": ".txt"
+    },
+    "processed\\dreaddit\\cleaned\\test_cleaned.csv": {
+      "size_mb": 0.321,
+      "suffix": ".csv",
+      "line_count": 716
+    },
+    "processed\\dreaddit\\cleaned\\train_cleaned.csv": {
+      "size_mb": 1.281,
+      "suffix": ".csv",
+      "line_count": 2835
+    },
+    "processed\\dreaddit\\final_splits\\test.csv": {
+      "size_mb": 0.327,
+      "suffix": ".csv",
+      "line_count": 716
+    },
+    "processed\\dreaddit\\final_splits\\train.csv": {
+      "size_mb": 1.045,
+      "suffix": ".csv",
+      "line_count": 2267
+    },
+    "processed\\dreaddit\\final_splits\\validation.csv": {
+      "size_mb": 0.26,
+      "suffix": ".csv",
+      "line_count": 569
+    },
+    "processed\\dreaddit\\standardized\\label_mapping.json": {
+      "size_mb": 0.0,
+      "suffix": ".json"
+    },
+    "processed\\dreaddit\\standardized\\test.csv": {
+      "size_mb": 0.327,
+      "suffix": ".csv",
+      "line_count": 716
+    },
+    "processed\\dreaddit\\standardized\\train.csv": {
+      "size_mb": 1.305,
+      "suffix": ".csv",
+      "line_count": 2835
+    },
+    "processed\\fig_loneliness\\cleaned\\test_cleaned.csv": {
+      "size_mb": 0.433,
+      "suffix": ".csv",
+      "line_count": 565
+    },
+    "processed\\fig_loneliness\\cleaned\\train_cleaned.csv": {
+      "size_mb": 3.195,
+      "suffix": ".csv",
+      "line_count": 3944
+    },
+    "processed\\fig_loneliness\\cleaned\\validation_cleaned.csv": {
+      "size_mb": 0.865,
+      "suffix": ".csv",
+      "line_count": 1127
+    },
+    "processed\\fig_loneliness\\standardized\\label_mapping.json": {
+      "size_mb": 0.0,
+      "suffix": ".json"
+    },
+    "processed\\fig_loneliness\\standardized\\test.csv": {
+      "size_mb": 0.439,
+      "suffix": ".csv",
+      "line_count": 565
+    },
+    "processed\\fig_loneliness\\standardized\\train.csv": {
+      "size_mb": 3.237,
+      "suffix": ".csv",
+      "line_count": 3944
+    },
+    "processed\\fig_loneliness\\standardized\\validation.csv": {
+      "size_mb": 0.876,
+      "suffix": ".csv",
+      "line_count": 1127
+    },
+    "processed\\goemotions\\emotion_mapping.txt": {
+      "size_mb": 0.0,
+      "suffix": ".txt"
+    },
+    "processed\\goemotions\\test.csv": {
+      "size_mb": 0.699,
+      "suffix": ".csv",
+      "line_count": 5428
+    },
+    "processed\\goemotions\\train.csv": {
+      "size_mb": 5.611,
+      "suffix": ".csv",
+      "line_count": 43411
+    },
+    "processed\\goemotions\\validation.csv": {
+      "size_mb": 0.701,
+      "suffix": ".csv",
+      "line_count": 5427
+    },
+    "processed\\goemotions\\cleaned\\test_cleaned.csv": {
+      "size_mb": 0.699,
+      "suffix": ".csv",
+      "line_count": 5428
+    },
+    "processed\\goemotions\\cleaned\\train_cleaned.csv": {
+      "size_mb": 5.611,
+      "suffix": ".csv",
+      "line_count": 43411
+    },
+    "processed\\goemotions\\cleaned\\validation_cleaned.csv": {
+      "size_mb": 0.701,
+      "suffix": ".csv",
+      "line_count": 5427
+    },
+    "processed\\nrc_vad\\cleaned\\nrc_vad_cleaned.csv": {
+      "size_mb": 1.528,
+      "suffix": ".csv",
+      "line_count": 54801
+    },
+    "processed\\nrc_vad\\standardized\\metadata.json": {
+      "size_mb": 0.001,
+      "suffix": ".json"
+    },
+    "processed\\nrc_vad\\standardized\\nrc_vad.csv": {
+      "size_mb": 1.975,
+      "suffix": ".csv",
+      "line_count": 54801
+    },
+    "processed\\tweeteval\\sentiment\\cleaned\\test_cleaned.csv": {
+      "size_mb": 1.235,
+      "suffix": ".csv",
+      "line_count": 12285
+    },
+    "processed\\tweeteval\\sentiment\\cleaned\\train_cleaned.csv": {
+      "size_mb": 5.254,
+      "suffix": ".csv",
+      "line_count": 45616
+    },
+    "processed\\tweeteval\\sentiment\\cleaned\\validation_cleaned.csv": {
+      "size_mb": 0.232,
+      "suffix": ".csv",
+      "line_count": 2001
+    },
+    "processed\\tweeteval\\sentiment\\standardized\\label_mapping.json": {
+      "size_mb": 0.0,
+      "suffix": ".json"
+    },
+    "processed\\tweeteval\\sentiment\\standardized\\test.csv": {
+      "size_mb": 1.235,
+      "suffix": ".csv",
+      "line_count": 12285
+    },
+    "processed\\tweeteval\\sentiment\\standardized\\train.csv": {
+      "size_mb": 5.254,
+      "suffix": ".csv",
+      "line_count": 45616
+    },
+    "processed\\tweeteval\\sentiment\\standardized\\validation.csv": {
+      "size_mb": 0.232,
+      "suffix": ".csv",
+      "line_count": 2001
+    }
+  },
+  "load_and_inference_tests": {},
+  "training_validation_summaries": {
+    "confidence\\module_validation\\confidence_module_validation_summary.json": {
+      "module_name": "Confidence and Uncertainty Estimation",
+      "module_version": "1.0.0",
+      "total_checks": 14,
+      "passed": 14,
+      "failed": 0,
+      "status": "PASSED",
+      "calibration_status": "not_calibrated",
+      "clinical_certainty_established": false,
+      "safety_probability_available": false,
+      "validation_results": [
+        {
+          "check": "Configuration validation",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "check": "Eight analytical modules registered",
+          "passed": true,
+          "detail": "Registered modules: 8"
+        },
+        {
+          "check": "Calibration correctly marked unavailable",
+          "passed": true,
+          "detail": "Status: not_calibrated"
+        },
+        {
+          "check": "Mathematical engine smoke validation",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "check": "Multi-class confidence calculation",
+          "passed": true,
+          "detail": "Prediction: negative"
+        },
+        {
+          "check": "Multi-label confidence calculation",
+          "passed": true,
+          "detail": "Labels analyzed: 3"
+        },
+        {
+          "check": "Aggregator smoke validation",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "check": "All eight modules aggregated",
+          "passed": true,
+          "detail": "Evaluated: 8/8"
+        },
+        {
+          "check": "No artificial overall confidence",
+          "passed": true,
+          "detail": "Overall confidence remains unavailable."
+        },
+        {
+          "check": "All modules marked evaluated",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "check": "Risk review status propagated",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "check": "No safety probability exposed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "check": "No clinical certainty claim",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "check": "Missing risk evaluation does not imply safety",
+          "passed": true,
+          "detail": ""
+        }
+      ]
+    },
+    "emotion\\goemotions_distilbert\\training_history.json": [
+      {
+        "epoch": 1,
+        "training_loss": 0.188748724796041,
+        "validation_loss": 0.09875641925513766,
+        "validation_macro_f1": 0.15234412051456192,
+        "validation_micro_f1": 0.39744348443602795,
+        "duration_seconds": 100.52336502075195
+      },
+      {
+        "epoch": 2,
+        "training_loss": 0.09194517380128228,
+        "validation_loss": 0.08825792284758602,
+        "validation_macro_f1": 0.3339375531391699,
+        "validation_micro_f1": 0.5343557060346544,
+        "duration_seconds": 94.72084927558899
+      },
+      {
+        "epoch": 3,
+        "training_loss": 0.08236929152338524,
+        "validation_loss": 0.08661200931941808,
+        "validation_macro_f1": 0.35896539944029365,
+        "validation_micro_f1": 0.5538491258572394,
+        "duration_seconds": 93.79672074317932
+      }
+    ],
+    "emotion\\goemotions_distilbert\\final_test_evaluation\\final_test_summary.json": {
+      "model": "distilbert-base-uncased",
+      "checkpoint": "D:\\Projects\\4AiMentalWellnessPeerSupport\\models\\emotion\\goemotions_distilbert\\best_checkpoint",
+      "evaluation_split": "official_test",
+      "test_records": 5427,
+      "number_of_emotions": 28,
+      "thresholds_source": "validation_summary.json",
+      "test_threshold_optimization": false,
+      "default_threshold_metrics": {
+        "macro_f1": 0.3653615951008267,
+        "micro_f1": 0.5546218487394958,
+        "macro_precision": 0.5450622075120611,
+        "micro_precision": 0.7267605633802817,
+        "macro_recall": 0.30949113647209275,
+        "micro_recall": 0.4484120714172855,
+        "hamming_loss": 0.02999552502040064,
+        "exact_match_accuracy": 0.4309931822369633,
+        "no_prediction_rate": 0.2961120324304404,
+        "average_predictions_per_example": 0.7195503961673116
+      },
+      "validation_calibrated_threshold_metrics": {
+        "macro_f1": 0.4509499071503847,
+        "micro_f1": 0.5868574233817239,
+        "macro_precision": 0.44424928063814306,
+        "micro_precision": 0.5276166456494326,
+        "macro_recall": 0.481902278787527,
+        "micro_recall": 0.6610838995101912,
+        "hamming_loss": 0.03876780120561215,
+        "exact_match_accuracy": 0.3819789939192924,
+        "no_prediction_rate": 0.015662428597751982,
+        "average_predictions_per_example": 1.4612124562373319
+      },
+      "frozen_thresholds": {
+        "admiration": 0.4516892731189728,
+        "amusement": 0.25423112511634827,
+        "anger": 0.2603894770145416,
+        "annoyance": 0.20963142812252045,
+        "approval": 0.17412921786308289,
+        "caring": 0.14426936209201813,
+        "confusion": 0.21272224187850952,
+        "curiosity": 0.2520156800746918,
+        "desire": 0.3242354094982147,
+        "disappointment": 0.1672186702489853,
+        "disapproval": 0.18053968250751495,
+        "disgust": 0.26817408204078674,
+        "embarrassment": 0.08404061198234558,
+        "excitement": 0.20149880647659302,
+        "fear": 0.2833845913410187,
+        "gratitude": 0.6116139888763428,
+        "grief": 0.5,
+        "joy": 0.21833586692810059,
+        "love": 0.31447142362594604,
+        "nervousness": 0.07864238321781158,
+        "optimism": 0.31880319118499756,
+        "pride": 0.5,
+        "realization": 0.09203285723924637,
+        "relief": 0.5,
+        "remorse": 0.26961395144462585,
+        "sadness": 0.26473838090896606,
+        "surprise": 0.23934932053089142,
+        "neutral": 0.2158462107181549
+      }
+    },
+    "emotion\\goemotions_distilbert\\validation_analysis\\validation_summary.json": {
+      "checkpoint": "D:\\Projects\\4AiMentalWellnessPeerSupport\\models\\emotion\\goemotions_distilbert\\best_checkpoint",
+      "validation_records": 5426,
+      "number_of_emotions": 28,
+      "minimum_positive_support": 20,
+      "threshold_bounds": [
+        0.05,
+        0.95
+      ],
+      "default_threshold_metrics": {
+        "macro_f1": 0.35896539944029365,
+        "micro_f1": 0.5538491258572394,
+        "macro_precision": 0.5450704774390306,
+        "macro_recall": 0.30347121182069714,
+        "no_prediction_rate": 0.2851087357169185,
+        "average_predictions_per_example": 0.7322152598599336
+      },
+      "calibrated_threshold_metrics": {
+        "macro_f1": 0.4770395446380044,
+        "micro_f1": 0.5953252604900028,
+        "macro_precision": 0.4830462373635914,
+        "macro_recall": 0.499553421031539,
+        "no_prediction_rate": 0.014375230372281608,
+        "average_predictions_per_example": 1.4419461850350166
+      },
+      "thresholds": {
+        "admiration": 0.4516892731189728,
+        "amusement": 0.25423112511634827,
+        "anger": 0.2603894770145416,
+        "annoyance": 0.20963142812252045,
+        "approval": 0.17412921786308289,
+        "caring": 0.14426936209201813,
+        "confusion": 0.21272224187850952,
+        "curiosity": 0.2520156800746918,
+        "desire": 0.3242354094982147,
+        "disappointment": 0.1672186702489853,
+        "disapproval": 0.18053968250751495,
+        "disgust": 0.26817408204078674,
+        "embarrassment": 0.08404061198234558,
+        "excitement": 0.20149880647659302,
+        "fear": 0.2833845913410187,
+        "gratitude": 0.6116139888763428,
+        "grief": 0.5,
+        "joy": 0.21833586692810059,
+        "love": 0.31447142362594604,
+        "nervousness": 0.07864238321781158,
+        "optimism": 0.31880319118499756,
+        "pride": 0.5,
+        "realization": 0.09203285723924637,
+        "relief": 0.5,
+        "remorse": 0.26961395144462585,
+        "sadness": 0.26473838090896606,
+        "surprise": 0.23934932053089142,
+        "neutral": 0.2158462107181549
+      }
+    },
+    "loneliness\\fig_loneliness_distilbert\\training_history.json": [
+      {
+        "epoch": 1,
+        "training": {
+          "accuracy": 0.8412376363175247,
+          "macro_precision": 0.8413952956286839,
+          "macro_recall": 0.839338729351444,
+          "macro_f1": 0.8400971472549228,
+          "weighted_f1": 0.8409978938719327,
+          "non_lonely_precision": 0.839852738150023,
+          "non_lonely_recall": 0.8678078934854969,
+          "non_lonely_f1": 0.853601496725912,
+          "lonely_precision": 0.8429378531073446,
+          "lonely_recall": 0.8108695652173913,
+          "lonely_f1": 0.8265927977839335,
+          "non_lonely_support": 2103,
+          "lonely_support": 1840,
+          "confusion_matrix": [
+            [
+              1825,
+              278
+            ],
+            [
+              348,
+              1492
+            ]
+          ],
+          "loss": 0.37464371296760396,
+          "duration_seconds": 23.83348059654236
+        },
+        "validation": {
+          "accuracy": 0.9511545293072824,
+          "macro_precision": 0.9537526047566927,
+          "macro_recall": 0.9496331899822918,
+          "macro_f1": 0.950861179061927,
+          "weighted_f1": 0.9510432585245615,
+          "non_lonely_precision": 0.9293739967897271,
+          "non_lonely_recall": 0.9813559322033898,
+          "non_lonely_f1": 0.9546578730420445,
+          "lonely_precision": 0.9781312127236581,
+          "lonely_recall": 0.917910447761194,
+          "lonely_f1": 0.9470644850818094,
+          "non_lonely_support": 590,
+          "lonely_support": 536,
+          "confusion_matrix": [
+            [
+              579,
+              11
+            ],
+            [
+              44,
+              492
+            ]
+          ],
+          "loss": 0.14064623785357103
+        }
+      },
+      {
+        "epoch": 2,
+        "training": {
+          "accuracy": 0.9604362160791275,
+          "macro_precision": 0.9601779821661343,
+          "macro_recall": 0.960361362649631,
+          "macro_f1": 0.960267421130145,
+          "weighted_f1": 0.960440156817236,
+          "non_lonely_precision": 0.9642346208869814,
+          "non_lonely_recall": 0.9614835948644793,
+          "non_lonely_f1": 0.9628571428571429,
+          "lonely_precision": 0.9561213434452871,
+          "lonely_recall": 0.9592391304347826,
+          "lonely_f1": 0.9576776994031471,
+          "non_lonely_support": 2103,
+          "lonely_support": 1840,
+          "confusion_matrix": [
+            [
+              2022,
+              81
+            ],
+            [
+              75,
+              1765
+            ]
+          ],
+          "loss": 0.1104037588269546,
+          "duration_seconds": 28.067587852478027
+        },
+        "validation": {
+          "accuracy": 0.9396092362344582,
+          "macro_precision": 0.9411173735025022,
+          "macro_recall": 0.9415190994181635,
+          "macro_f1": 0.9396075214538112,
+          "weighted_f1": 0.9396229544796346,
+          "non_lonely_precision": 0.981549815498155,
+          "non_lonely_recall": 0.9016949152542373,
+          "non_lonely_f1": 0.9399293286219081,
+          "lonely_precision": 0.9006849315068494,
+          "lonely_recall": 0.9813432835820896,
+          "lonely_f1": 0.9392857142857143,
+          "non_lonely_support": 590,
+          "lonely_support": 536,
+          "confusion_matrix": [
+            [
+              532,
+              58
+            ],
+            [
+              10,
+              526
+            ]
+          ],
+          "loss": 0.1525664222459738
+        }
+      },
+      {
+        "epoch": 3,
+        "training": {
+          "accuracy": 0.9794572660410855,
+          "macro_precision": 0.9792090834059002,
+          "macro_recall": 0.9795523734209928,
+          "macro_f1": 0.9793730134408698,
+          "weighted_f1": 0.9794609437339521,
+          "non_lonely_precision": 0.9832695984703633,
+          "non_lonely_recall": 0.9781264859724204,
+          "non_lonely_f1": 0.9806912991656734,
+          "lonely_precision": 0.975148568341437,
+          "lonely_recall": 0.9809782608695652,
+          "lonely_f1": 0.978054727716066,
+          "non_lonely_support": 2103,
+          "lonely_support": 1840,
+          "confusion_matrix": [
+            [
+              2057,
+              46
+            ],
+            [
+              35,
+              1805
+            ]
+          ],
+          "loss": 0.061482603568678185,
+          "duration_seconds": 26.039573669433594
+        },
+        "validation": {
+          "accuracy": 0.9573712255772646,
+          "macro_precision": 0.9571047183863068,
+          "macro_recall": 0.9580413609916518,
+          "macro_f1": 0.9573276066257165,
+          "weighted_f1": 0.9573930350530386,
+          "non_lonely_precision": 0.9737762237762237,
+          "non_lonely_recall": 0.9440677966101695,
+          "non_lonely_f1": 0.9586919104991394,
+          "lonely_precision": 0.9404332129963899,
+          "lonely_recall": 0.9720149253731343,
+          "lonely_f1": 0.9559633027522936,
+          "non_lonely_support": 590,
+          "lonely_support": 536,
+          "confusion_matrix": [
+            [
+              557,
+              33
+            ],
+            [
+              15,
+              521
+            ]
+          ],
+          "loss": 0.13448923924964265
+        }
+      },
+      {
+        "epoch": 4,
+        "training": {
+          "accuracy": 0.9908698960182603,
+          "macro_precision": 0.9907656677748623,
+          "macro_recall": 0.9908970621679175,
+          "macro_f1": 0.9908303320739155,
+          "weighted_f1": 0.9908705070444277,
+          "non_lonely_precision": 0.9923773225345403,
+          "non_lonely_recall": 0.990489776509748,
+          "non_lonely_f1": 0.991432651118515,
+          "lonely_precision": 0.9891540130151844,
+          "lonely_recall": 0.991304347826087,
+          "lonely_f1": 0.990228013029316,
+          "non_lonely_support": 2103,
+          "lonely_support": 1840,
+          "confusion_matrix": [
+            [
+              2083,
+              20
+            ],
+            [
+              16,
+              1824
+            ]
+          ],
+          "loss": 0.029353536115713705,
+          "duration_seconds": 22.824827671051025
+        },
+        "validation": {
+          "accuracy": 0.9635879218472468,
+          "macro_precision": 0.9633207926234091,
+          "macro_recall": 0.9638028079939287,
+          "macro_f1": 0.9635243709443322,
+          "weighted_f1": 0.9635973868753406,
+          "non_lonely_precision": 0.9708404802744426,
+          "non_lonely_recall": 0.9593220338983051,
+          "non_lonely_f1": 0.9650468883205456,
+          "lonely_precision": 0.9558011049723757,
+          "lonely_recall": 0.9682835820895522,
+          "lonely_f1": 0.9620018535681186,
+          "non_lonely_support": 590,
+          "lonely_support": 536,
+          "confusion_matrix": [
+            [
+              566,
+              24
+            ],
+            [
+              17,
+              519
+            ]
+          ],
+          "loss": 0.13233772025886156
+        }
+      },
+      {
+        "epoch": 5,
+        "training": {
+          "accuracy": 0.9961957900076084,
+          "macro_precision": 0.9961297573831486,
+          "macro_recall": 0.9962297649320846,
+          "macro_f1": 0.9961791769309498,
+          "weighted_f1": 0.9961959816969546,
+          "non_lonely_precision": 0.9971428571428571,
+          "non_lonely_recall": 0.9957203994293866,
+          "non_lonely_f1": 0.9964311206281228,
+          "lonely_precision": 0.99511665762344,
+          "lonely_recall": 0.9967391304347826,
+          "lonely_f1": 0.9959272332337769,
+          "non_lonely_support": 2103,
+          "lonely_support": 1840,
+          "confusion_matrix": [
+            [
+              2094,
+              9
+            ],
+            [
+              6,
+              1834
+            ]
+          ],
+          "loss": 0.014495692177605768,
+          "duration_seconds": 23.394951820373535
+        },
+        "validation": {
+          "accuracy": 0.9635879218472468,
+          "macro_precision": 0.9636266131762368,
+          "macro_recall": 0.9633759170250442,
+          "macro_f1": 0.9634943742305043,
+          "weighted_f1": 0.9635829982884708,
+          "non_lonely_precision": 0.9629005059021922,
+          "non_lonely_recall": 0.9677966101694915,
+          "non_lonely_f1": 0.9653423499577346,
+          "lonely_precision": 0.9643527204502814,
+          "lonely_recall": 0.9589552238805971,
+          "lonely_f1": 0.961646398503274,
+          "non_lonely_support": 590,
+          "lonely_support": 536,
+          "confusion_matrix": [
+            [
+              571,
+              19
+            ],
+            [
+              22,
+              514
+            ]
+          ],
+          "loss": 0.13353464916242774
+        }
+      }
+    ],
+    "loneliness\\fig_loneliness_distilbert\\training_summary.json": {
+      "status": "completed",
+      "model": "distilbert-base-uncased",
+      "best_epoch": 4,
+      "best_validation_macro_f1": 0.9635243709443322,
+      "epochs_completed": 5,
+      "total_duration_seconds": 139.02763748168945,
+      "max_sequence_length": 384,
+      "training_batch_size": 8,
+      "gradient_accumulation_steps": 4,
+      "effective_batch_size": 32,
+      "learning_rate": 2e-05,
+      "random_seed": 42
+    },
+    "loneliness\\fig_loneliness_distilbert\\dataset_analysis\\token_length_analysis.json": {
+      "model_tokenizer": "distilbert-base-uncased",
+      "dataset_directory": "D:\\Projects\\4AiMentalWellnessPeerSupport\\datasets\\processed\\fig_loneliness\\standardized",
+      "candidate_max_lengths": [
+        128,
+        160,
+        192,
+        224,
+        256,
+        320,
+        384
+      ],
+      "dataset_statistics": [
+        {
+          "split": "train",
+          "records": 3943,
+          "minimum_tokens": 27,
+          "maximum_tokens": 3614,
+          "mean_tokens": 178.5671,
+          "median_tokens": 122.0,
+          "p75_tokens": 212.0,
+          "p90_tokens": 356.0,
+          "p95_tokens": 499.9,
+          "p99_tokens": 921.38
+        },
+        {
+          "split": "validation",
+          "records": 1126,
+          "minimum_tokens": 14,
+          "maximum_tokens": 3248,
+          "mean_tokens": 169.2975,
+          "median_tokens": 119.0,
+          "p75_tokens": 204.0,
+          "p90_tokens": 344.0,
+          "p95_tokens": 460.5,
+          "p99_tokens": 825.25
+        },
+        {
+          "split": "test",
+          "records": 564,
+          "minimum_tokens": 27,
+          "maximum_tokens": 1731,
+          "mean_tokens": 168.8085,
+          "median_tokens": 111.5,
+          "p75_tokens": 210.0,
+          "p90_tokens": 344.1,
+          "p95_tokens": 484.7,
+          "p99_tokens": 886.0
+        }
+      ],
+      "truncation_statistics": [
+        {
+          "split": "train",
+          "max_length": 128,
+          "truncated_records": 1878,
+          "total_records": 3943,
+          "truncation_percentage": 47.6287
+        },
+        {
+          "split": "train",
+          "max_length": 160,
+          "truncated_records": 1463,
+          "total_records": 3943,
+          "truncation_percentage": 37.1037
+        },
+        {
+          "split": "train",
+          "max_length": 192,
+          "truncated_records": 1147,
+          "total_records": 3943,
+          "truncation_percentage": 29.0895
+        },
+        {
+          "split": "train",
+          "max_length": 224,
+          "truncated_records": 914,
+          "total_records": 3943,
+          "truncation_percentage": 23.1803
+        },
+        {
+          "split": "train",
+          "max_length": 256,
+          "truncated_records": 730,
+          "total_records": 3943,
+          "truncation_percentage": 18.5138
+        },
+        {
+          "split": "train",
+          "max_length": 320,
+          "truncated_records": 487,
+          "total_records": 3943,
+          "truncation_percentage": 12.351
+        },
+        {
+          "split": "train",
+          "max_length": 384,
+          "truncated_records": 332,
+          "total_records": 3943,
+          "truncation_percentage": 8.42
+        },
+        {
+          "split": "validation",
+          "max_length": 128,
+          "truncated_records": 515,
+          "total_records": 1126,
+          "truncation_percentage": 45.7371
+        },
+        {
+          "split": "validation",
+          "max_length": 160,
+          "truncated_records": 392,
+          "total_records": 1126,
+          "truncation_percentage": 34.8135
+        },
+        {
+          "split": "validation",
+          "max_length": 192,
+          "truncated_records": 308,
+          "total_records": 1126,
+          "truncation_percentage": 27.3535
+        },
+        {
+          "split": "validation",
+          "max_length": 224,
+          "truncated_records": 245,
+          "total_records": 1126,
+          "truncation_percentage": 21.7584
+        },
+        {
+          "split": "validation",
+          "max_length": 256,
+          "truncated_records": 196,
+          "total_records": 1126,
+          "truncation_percentage": 17.4067
+        },
+        {
+          "split": "validation",
+          "max_length": 320,
+          "truncated_records": 131,
+          "total_records": 1126,
+          "truncation_percentage": 11.6341
+        },
+        {
+          "split": "validation",
+          "max_length": 384,
+          "truncated_records": 85,
+          "total_records": 1126,
+          "truncation_percentage": 7.5488
+        },
+        {
+          "split": "test",
+          "max_length": 128,
+          "truncated_records": 250,
+          "total_records": 564,
+          "truncation_percentage": 44.3262
+        },
+        {
+          "split": "test",
+          "max_length": 160,
+          "truncated_records": 192,
+          "total_records": 564,
+          "truncation_percentage": 34.0426
+        },
+        {
+          "split": "test",
+          "max_length": 192,
+          "truncated_records": 159,
+          "total_records": 564,
+          "truncation_percentage": 28.1915
+        },
+        {
+          "split": "test",
+          "max_length": 224,
+          "truncated_records": 122,
+          "total_records": 564,
+          "truncation_percentage": 21.6312
+        },
+        {
+          "split": "test",
+          "max_length": 256,
+          "truncated_records": 96,
+          "total_records": 564,
+          "truncation_percentage": 17.0213
+        },
+        {
+          "split": "test",
+          "max_length": 320,
+          "truncated_records": 66,
+          "total_records": 564,
+          "truncation_percentage": 11.7021
+        },
+        {
+          "split": "test",
+          "max_length": 384,
+          "truncated_records": 44,
+          "total_records": 564,
+          "truncation_percentage": 7.8014
+        }
+      ],
+      "label_statistics": [
+        {
+          "split": "train",
+          "label": 0,
+          "count": 2103,
+          "percentage": 53.335
+        },
+        {
+          "split": "train",
+          "label": 1,
+          "count": 1840,
+          "percentage": 46.665
+        },
+        {
+          "split": "validation",
+          "label": 0,
+          "count": 590,
+          "percentage": 52.3979
+        },
+        {
+          "split": "validation",
+          "label": 1,
+          "count": 536,
+          "percentage": 47.6021
+        },
+        {
+          "split": "test",
+          "label": 0,
+          "count": 307,
+          "percentage": 54.4326
+        },
+        {
+          "split": "test",
+          "label": 1,
+          "count": 257,
+          "percentage": 45.5674
+        }
+      ]
+    },
+    "loneliness\\fig_loneliness_distilbert\\final_test_evaluation\\final_test_summary.json": {
+      "split": "official_test",
+      "records": 564,
+      "accuracy": 0.9716312056737588,
+      "macro_precision": 0.9706049256611055,
+      "macro_recall": 0.9729907856880315,
+      "macro_f1": 0.971487791314898,
+      "weighted_f1": 0.9716670592634742,
+      "non_lonely": {
+        "precision": 0.98989898989899,
+        "recall": 0.9576547231270358,
+        "f1-score": 0.9735099337748344,
+        "support": 307.0
+      },
+      "lonely": {
+        "precision": 0.951310861423221,
+        "recall": 0.9883268482490273,
+        "f1-score": 0.9694656488549618,
+        "support": 257.0
+      },
+      "confusion_matrix": [
+        [
+          294,
+          13
+        ],
+        [
+          3,
+          254
+        ]
+      ],
+      "confidence": {
+        "mean": 0.9903086403794322,
+        "median": 0.9980199337005615,
+        "p25": 0.9977261424064636,
+        "p75": 0.9986409842967987,
+        "p95": 0.9989871263504029
+      },
+      "checkpoint_epoch": 4,
+      "checkpoint_validation_macro_f1": 0.9635243709443322
+    },
+    "loneliness\\fig_loneliness_distilbert\\validation_analysis\\validation_summary.json": {
+      "split": "validation",
+      "records": 1126,
+      "accuracy": 0.9635879218472468,
+      "macro_precision": 0.9633207926234091,
+      "macro_recall": 0.9638028079939287,
+      "macro_f1": 0.9635243709443322,
+      "weighted_f1": 0.9635973868753406,
+      "non_lonely": {
+        "precision": 0.9708404802744426,
+        "recall": 0.9593220338983051,
+        "f1-score": 0.9650468883205456,
+        "support": 590.0
+      },
+      "lonely": {
+        "precision": 0.9558011049723757,
+        "recall": 0.9682835820895522,
+        "f1-score": 0.9620018535681186,
+        "support": 536.0
+      },
+      "confusion_matrix": [
+        [
+          566,
+          24
+        ],
+        [
+          17,
+          519
+        ]
+      ],
+      "confidence": {
+        "mean": 0.9896485516487176,
+        "median": 0.997992753982544,
+        "p25": 0.9976264834403992,
+        "p75": 0.9986528307199478,
+        "p95": 0.9989916682243347
+      },
+      "checkpoint_epoch": 4
+    },
+    "rumination\\rule_based\\conversation_test_suite\\conversation_test_summary.json": {
+      "module": "Rumination Detection",
+      "analysis_type": "conversation_level",
+      "total_tests": 7,
+      "metrics": {
+        "true_positive": 2,
+        "true_negative": 5,
+        "false_positive": 0,
+        "false_negative": 0,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0
+      },
+      "results": [
+        {
+          "id": "CONV001",
+          "group": "repeated_rumination",
+          "expected": true,
+          "predicted": true,
+          "status": "PASS",
+          "message_count": 3,
+          "messages_with_indicators": 1,
+          "repeated_keyword_count": 2,
+          "repeated_pair_count": 2,
+          "error": null
+        },
+        {
+          "id": "CONV002",
+          "group": "ordinary_topic_repetition",
+          "expected": false,
+          "predicted": false,
+          "status": "PASS",
+          "message_count": 3,
+          "messages_with_indicators": 0,
+          "repeated_keyword_count": 1,
+          "repeated_pair_count": 3,
+          "error": null
+        },
+        {
+          "id": "CONV003",
+          "group": "isolated_rumination_language",
+          "expected": false,
+          "predicted": false,
+          "status": "PASS",
+          "message_count": 2,
+          "messages_with_indicators": 1,
+          "repeated_keyword_count": 0,
+          "repeated_pair_count": 0,
+          "error": null
+        },
+        {
+          "id": "CONV004",
+          "group": "unrelated_conversation",
+          "expected": false,
+          "predicted": false,
+          "status": "PASS",
+          "message_count": 3,
+          "messages_with_indicators": 0,
+          "repeated_keyword_count": 0,
+          "repeated_pair_count": 0,
+          "error": null
+        },
+        {
+          "id": "CONV005",
+          "group": "multiple_rumination_indicators",
+          "expected": true,
+          "predicted": true,
+          "status": "PASS",
+          "message_count": 3,
+          "messages_with_indicators": 3,
+          "repeated_keyword_count": 1,
+          "repeated_pair_count": 3,
+          "error": null
+        },
+        {
+          "id": "CONV006",
+          "group": "third_person_conversation",
+          "expected": false,
+          "predicted": false,
+          "status": "PASS",
+          "message_count": 2,
+          "messages_with_indicators": 0,
+          "repeated_keyword_count": 2,
+          "repeated_pair_count": 1,
+          "error": null
+        },
+        {
+          "id": "CONV007",
+          "group": "negated_expressions",
+          "expected": false,
+          "predicted": false,
+          "status": "PASS",
+          "message_count": 2,
+          "messages_with_indicators": 0,
+          "repeated_keyword_count": 2,
+          "repeated_pair_count": 1,
+          "error": null
+        }
+      ],
+      "limitations": [
+        "The test cases are manually constructed.",
+        "The test set is small and not representative of real users.",
+        "Lexical overlap does not establish semantic equivalence.",
+        "Passing these tests does not establish clinical validity."
+      ]
+    },
+    "rumination\\rule_based\\module_validation\\conversation_validation.json": {
+      "message_count": 3,
+      "messages_with_indicators": 1,
+      "recurring_rumination_signal": true,
+      "semantic_analysis": {
+        "semantic_analysis_enabled": true,
+        "semantic_analysis_successful": true,
+        "semantic_comparisons": [
+          {
+            "message_1_index": 0,
+            "message_2_index": 1,
+            "message_1": "I made a mistake during my examination and I feel bad about it.",
+            "message_2": "I keep remembering what happened during that examination.",
+            "similarity_score": 0.5309
+          },
+          {
+            "message_1_index": 0,
+            "message_2_index": 2,
+            "message_1": "I made a mistake during my examination and I feel bad about it.",
+            "message_2": "I cannot stop thinking about that mistake.",
+            "similarity_score": 0.5127
+          },
+          {
+            "message_1_index": 1,
+            "message_2_index": 2,
+            "message_1": "I keep remembering what happened during that examination.",
+            "message_2": "I cannot stop thinking about that mistake.",
+            "similarity_score": 0.3388
+          }
+        ],
+        "indicator_semantic_candidates": [
+          {
+            "first_message_id": "MSG001",
+            "second_message_id": "MSG003",
+            "first_message_has_indicator": false,
+            "second_message_has_indicator": true,
+            "indicator_categories": [
+              "repetitive_thoughts"
+            ],
+            "similarity_score": 0.5127,
+            "evidence_role": "Ranked semantic candidate for contextual review"
+          },
+          {
+            "first_message_id": "MSG002",
+            "second_message_id": "MSG003",
+            "first_message_has_indicator": false,
+            "second_message_has_indicator": true,
+            "indicator_categories": [
+              "repetitive_thoughts"
+            ],
+            "similarity_score": 0.3388,
+            "evidence_role": "Ranked semantic candidate for contextual review"
+          }
+        ],
+        "semantic_candidate_count": 2,
+        "error": null
+      },
+      "interpretation": "A rumination-related linguistic indicator shares topic keywords with another conversation message. Semantic comparisons are provided as additional contextual evidence. Human contextual review is recommended."
+    },
+    "rumination\\rule_based\\module_validation\\rumination_module_validation_summary.json": {
+      "module": "Rumination Detection",
+      "validation_type": "Engineering module validation",
+      "timestamp": "2026-11-20T07:58:50.725370",
+      "total_tests": 13,
+      "passed": 13,
+      "failed": 0,
+      "pass_percentage": 100.0,
+      "results": [
+        {
+          "test_id": "SINGLE001",
+          "category": "Single-message",
+          "description": "Repetitive-thinking input",
+          "status": "PASS",
+          "details": "Output structure and data types validated."
+        },
+        {
+          "test_id": "SINGLE002",
+          "category": "Single-message",
+          "description": "Ordinary neutral input",
+          "status": "PASS",
+          "details": "Output structure and data types validated."
+        },
+        {
+          "test_id": "SINGLE003",
+          "category": "Single-message",
+          "description": "Past-focused input",
+          "status": "PASS",
+          "details": "Output structure and data types validated."
+        },
+        {
+          "test_id": "SINGLE004",
+          "category": "Single-message",
+          "description": "Future-worry input",
+          "status": "PASS",
+          "details": "Output structure and data types validated."
+        },
+        {
+          "test_id": "CONV001",
+          "category": "Conversation",
+          "description": "Complete conversation output validation",
+          "status": "PASS",
+          "details": "Message count, result structure, signal type and semantic output validated."
+        },
+        {
+          "test_id": "SEM001",
+          "category": "Semantic",
+          "description": "Semantic analysis returns structured output",
+          "status": "PASS",
+          "details": "Semantic analysis returned a non-empty dictionary."
+        },
+        {
+          "test_id": "INPUT001",
+          "category": "Input handling",
+          "description": "Non-string input",
+          "status": "PASS",
+          "details": "Expected exception raised correctly."
+        },
+        {
+          "test_id": "INPUT002",
+          "category": "Input handling",
+          "description": "Text shorter than minimum length",
+          "status": "PASS",
+          "details": "Expected exception raised correctly."
+        },
+        {
+          "test_id": "INPUT003",
+          "category": "Input handling",
+          "description": "Text exceeding maximum length",
+          "status": "PASS",
+          "details": "Expected exception raised correctly."
+        },
+        {
+          "test_id": "INPUT004",
+          "category": "Input handling",
+          "description": "Conversation with fewer than two messages",
+          "status": "PASS",
+          "details": "Expected exception raised correctly."
+        },
+        {
+          "test_id": "INPUT005",
+          "category": "Input handling",
+          "description": "Conversation with non-list input",
+          "status": "PASS",
+          "details": "Expected exception raised correctly."
+        },
+        {
+          "test_id": "INPUT006",
+          "category": "Input handling",
+          "description": "Conversation with empty message",
+          "status": "PASS",
+          "details": "Expected exception raised correctly."
+        },
+        {
+          "test_id": "CONS001",
+          "category": "Consistency",
+          "description": "Repeated identical input gives consistent outputs",
+          "status": "PASS",
+          "details": "Signal and message count remained consistent."
+        }
+      ],
+      "qualification": "Constructed test cases validate implementation behavior only. They do not establish clinical validity or real-world detection accuracy."
+    },
+    "rumination\\rule_based\\test_suite\\test_summary.json": {
+      "module": "Rumination Detection",
+      "test_count": 26,
+      "metrics": {
+        "true_positive": 8,
+        "true_negative": 14,
+        "false_positive": 0,
+        "false_negative": 0,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0
+      },
+      "group_results": {
+        "positive": {
+          "total": 8,
+          "passed": 8,
+          "failed": 0,
+          "errors": 0
+        },
+        "negative": {
+          "total": 6,
+          "passed": 6,
+          "failed": 0,
+          "errors": 0
+        },
+        "negation": {
+          "total": 4,
+          "passed": 4,
+          "failed": 0,
+          "errors": 0
+        },
+        "third_person": {
+          "total": 4,
+          "passed": 4,
+          "failed": 0,
+          "errors": 0
+        },
+        "ambiguous": {
+          "total": 4,
+          "passed": 0,
+          "failed": 0,
+          "errors": 0
+        }
+      },
+      "limitations": [
+        "Test examples are manually constructed.",
+        "Metrics do not establish clinical validity.",
+        "Ambiguous examples are excluded from binary metrics.",
+        "The test set is small and not representative of real users."
+      ]
+    },
+    "sentiment\\tweeteval_bilstm\\training_history.json": [
+      {
+        "epoch": 1,
+        "training_loss": 0.8920639685197813,
+        "accuracy": 0.6545,
+        "macro_f1": 0.6012479644835148,
+        "weighted_f1": 0.6472991093964097,
+        "macro_precision": 0.6404992436820471,
+        "macro_recall": 0.5879813458927382,
+        "validation_loss": 0.752802737236023,
+        "duration_seconds": 19.95155620574951,
+        "optimizer_steps": 713
+      },
+      {
+        "epoch": 2,
+        "training_loss": 0.6675436898646198,
+        "accuracy": 0.695,
+        "macro_f1": 0.6678100886940802,
+        "weighted_f1": 0.6942169199693206,
+        "macro_precision": 0.6734364855610279,
+        "macro_recall": 0.6631245571118989,
+        "validation_loss": 0.7015829138755798,
+        "duration_seconds": 24.847476720809937,
+        "optimizer_steps": 1426
+      },
+      {
+        "epoch": 3,
+        "training_loss": 0.5131107698664988,
+        "accuracy": 0.6805,
+        "macro_f1": 0.6549762280120648,
+        "weighted_f1": 0.6813985562130241,
+        "macro_precision": 0.6544178518698267,
+        "macro_recall": 0.656185352387884,
+        "validation_loss": 0.7623455781936646,
+        "duration_seconds": 42.05702066421509,
+        "optimizer_steps": 2139
+      },
+      {
+        "epoch": 4,
+        "training_loss": 0.35829129147807925,
+        "accuracy": 0.662,
+        "macro_f1": 0.631315000597644,
+        "weighted_f1": 0.6603508259402684,
+        "macro_precision": 0.6411047112982243,
+        "macro_recall": 0.6241881653274058,
+        "validation_loss": 0.9173704643249512,
+        "duration_seconds": 47.6802875995636,
+        "optimizer_steps": 2852
+      },
+      {
+        "epoch": 5,
+        "training_loss": 0.22972679952577868,
+        "accuracy": 0.643,
+        "macro_f1": 0.6163197502933319,
+        "weighted_f1": 0.6428487959206804,
+        "macro_precision": 0.6133280798547688,
+        "macro_recall": 0.6202117736927865,
+        "validation_loss": 1.24015647315979,
+        "duration_seconds": 28.13690447807312,
+        "optimizer_steps": 3565
+      }
+    ],
+    "sentiment\\tweeteval_bilstm\\final_test_evaluation\\final_test_summary.json": {
+      "dataset": "TweetEval Official Test",
+      "records": 12284,
+      "checkpoint_epoch": 2,
+      "best_validation_macro_f1": 0.6678100886940802,
+      "accuracy": 0.6041191794203843,
+      "macro_f1": 0.5943181094112234,
+      "weighted_f1": 0.6030463572236089,
+      "macro_precision": 0.5962918028097931,
+      "macro_recall": 0.6050842947251863,
+      "mean_confidence": 0.6675159335136414,
+      "median_confidence": 0.6559252738952637,
+      "confidence_p25": 0.5466760396957397,
+      "confidence_p75": 0.7807861566543579,
+      "confidence_p95": 0.9205181002616882
+    },
+    "sentiment\\tweeteval_bilstm\\validation_analysis\\validation_summary.json": {
+      "records": 2000,
+      "checkpoint_epoch": 2,
+      "checkpoint_validation_macro_f1": 0.6678100886940802,
+      "accuracy": 0.695,
+      "macro_f1": 0.6678100886940802,
+      "weighted_f1": 0.6942169199693206,
+      "macro_precision": 0.6734364855610279,
+      "macro_recall": 0.6631245571118989,
+      "mean_confidence": 0.7075619101524353,
+      "median_confidence": 0.7049782872200012,
+      "confidence_p25": 0.5710456371307373,
+      "confidence_p75": 0.847528338432312,
+      "confidence_p95": 0.9555874466896057
+    },
+    "sentiment\\tweeteval_distilbert\\training_history.json": [
+      {
+        "epoch": 1,
+        "training_loss": 0.7188150584181581,
+        "accuracy": 0.7295,
+        "macro_f1": 0.7096913656809037,
+        "weighted_f1": 0.7296263534478467,
+        "macro_precision": 0.7105845123594473,
+        "macro_recall": 0.7088539683476393,
+        "validation_loss": 0.622200095653534,
+        "duration_seconds": 155.6273500919342,
+        "optimizer_steps": 1426
+      },
+      {
+        "epoch": 2,
+        "training_loss": 0.5329452492878989,
+        "accuracy": 0.7395,
+        "macro_f1": 0.719774104885957,
+        "weighted_f1": 0.7384491458321052,
+        "macro_precision": 0.7223447211896232,
+        "macro_recall": 0.7178661118534535,
+        "validation_loss": 0.616647020816803,
+        "duration_seconds": 120.22110390663147,
+        "optimizer_steps": 2852
+      },
+      {
+        "epoch": 3,
+        "training_loss": 0.42282919738097474,
+        "accuracy": 0.738,
+        "macro_f1": 0.7198019524364089,
+        "weighted_f1": 0.7384892507545403,
+        "macro_precision": 0.7174307321673323,
+        "macro_recall": 0.7224101496253396,
+        "validation_loss": 0.650653199493885,
+        "duration_seconds": 127.06422185897827,
+        "optimizer_steps": 4278
+      }
+    ],
+    "sentiment\\tweeteval_distilbert\\final_test_evaluation\\final_test_summary.json": {
+      "test_records": 12284,
+      "accuracy": 0.6945620319114295,
+      "macro_f1": 0.6921306273174134,
+      "weighted_f1": 0.6946821305803017,
+      "macro_precision": 0.687947857412759,
+      "macro_recall": 0.6969444820515592,
+      "mean_prediction_confidence": 0.8048391938209534,
+      "median_prediction_confidence": 0.8457106351852417
+    },
+    "sentiment\\tweeteval_distilbert\\validation_analysis\\validation_summary.json": {
+      "validation_records": 2000,
+      "accuracy": 0.738,
+      "macro_f1": 0.7198019524364089,
+      "weighted_f1": 0.7384892507545403,
+      "macro_precision": 0.7174307321673323,
+      "macro_recall": 0.7224101496253396,
+      "mean_prediction_confidence": 0.8286603689193726,
+      "median_prediction_confidence": 0.8818546533584595,
+      "confidence_percentiles": {
+        "p25": 0.7108051180839539,
+        "p50": 0.8818546533584595,
+        "p75": 0.9654349684715271,
+        "p95": 0.990976095199585
+      }
+    },
+    "stress\\dreaddit_distilbert\\training_history.json": [
+      {
+        "epoch": 1,
+        "duration_seconds": 11.8,
+        "global_step": 71,
+        "train": {
+          "accuracy": 0.6862312444836717,
+          "macro_precision": 0.6987671833044866,
+          "macro_recall": 0.6788978217549646,
+          "macro_f1": 0.6752329784289721,
+          "weighted_f1": 0.6781341996904037,
+          "non_stress_f1": 0.6154678204434829,
+          "stress_f1": 0.7349981364144614,
+          "non_stress_support": 1078,
+          "stress_support": 1188,
+          "loss": 0.5715646233776925
+        },
+        "validation": {
+          "accuracy": 0.772887323943662,
+          "macro_precision": 0.7808657156910969,
+          "macro_recall": 0.7767710663683818,
+          "macro_f1": 0.7725143203092255,
+          "weighted_f1": 0.7720602289281725,
+          "non_stress_f1": 0.7817258883248731,
+          "stress_f1": 0.763302752293578,
+          "non_stress_support": 270,
+          "stress_support": 298,
+          "loss": 0.46976163652208114
+        }
+      },
+      {
+        "epoch": 2,
+        "duration_seconds": 8.81,
+        "global_step": 142,
+        "train": {
+          "accuracy": 0.8446601941747572,
+          "macro_precision": 0.8446433827443465,
+          "macro_recall": 0.8437779152064866,
+          "macro_f1": 0.8441150719199499,
+          "weighted_f1": 0.8445625603380753,
+          "non_stress_f1": 0.8348968105065666,
+          "stress_f1": 0.8533333333333334,
+          "non_stress_support": 1078,
+          "stress_support": 1188,
+          "loss": 0.37461895464171824
+        },
+        "validation": {
+          "accuracy": 0.7922535211267606,
+          "macro_precision": 0.8004568106312293,
+          "macro_recall": 0.7877454635843897,
+          "macro_f1": 0.7886664900929534,
+          "weighted_f1": 0.7900237450787183,
+          "non_stress_f1": 0.7611336032388664,
+          "stress_f1": 0.8161993769470405,
+          "non_stress_support": 270,
+          "stress_support": 298,
+          "loss": 0.4351146486070421
+        }
+      },
+      {
+        "epoch": 3,
+        "duration_seconds": 8.68,
+        "global_step": 213,
+        "train": {
+          "accuracy": 0.8976169461606355,
+          "macro_precision": 0.8974016744244167,
+          "macro_recall": 0.897332165189308,
+          "macro_f1": 0.8973662160019928,
+          "weighted_f1": 0.8976124688363741,
+          "non_stress_f1": 0.8922934076137419,
+          "stress_f1": 0.9024390243902439,
+          "non_stress_support": 1078,
+          "stress_support": 1188,
+          "loss": 0.2615062781202961
+        },
+        "validation": {
+          "accuracy": 0.7816901408450704,
+          "macro_precision": 0.7811940298507463,
+          "macro_recall": 0.7809843400447427,
+          "macro_f1": 0.7810794345463814,
+          "weighted_f1": 0.7816494270918245,
+          "non_stress_f1": 0.7695167286245354,
+          "stress_f1": 0.7926421404682275,
+          "non_stress_support": 270,
+          "stress_support": 298,
+          "loss": 0.49825935893588597
+        }
+      },
+      {
+        "epoch": 4,
+        "duration_seconds": 8.68,
+        "global_step": 284,
+        "train": {
+          "accuracy": 0.9452780229479258,
+          "macro_precision": 0.9451166385609893,
+          "macro_recall": 0.9451917130488559,
+          "macro_f1": 0.9451534346835856,
+          "weighted_f1": 0.9452803301380062,
+          "non_stress_f1": 0.9425393883225208,
+          "stress_f1": 0.9477674810446504,
+          "non_stress_support": 1078,
+          "stress_support": 1188,
+          "loss": 0.17020972555791827
+        },
+        "validation": {
+          "accuracy": 0.7852112676056338,
+          "macro_precision": 0.7930855481727574,
+          "macro_recall": 0.7806860551826995,
+          "macro_f1": 0.7815026422994942,
+          "weighted_f1": 0.7829059059288443,
+          "non_stress_f1": 0.7530364372469636,
+          "stress_f1": 0.8099688473520249,
+          "non_stress_support": 270,
+          "stress_support": 298,
+          "loss": 0.6139632993274264
+        }
+      }
+    ],
+    "stress\\dreaddit_distilbert\\training_summary.json": {
+      "model": "DistilBERT",
+      "dataset": "Dreaddit",
+      "best_epoch": 2,
+      "best_validation_macro_f1": 0.7886664900929534,
+      "epochs_completed": 4,
+      "total_optimizer_steps": 284,
+      "total_training_duration_seconds": 40.06,
+      "peak_gpu_memory_gb": 1.931,
+      "device": "cuda",
+      "fp16_enabled": true,
+      "checkpoint": "D:\\Projects\\4AiMentalWellnessPeerSupport\\models\\stress\\dreaddit_distilbert\\best_checkpoint\\best_checkpoint.pt"
+    },
+    "stress\\dreaddit_distilbert\\final_test_evaluation\\final_test_summary.json": {
+      "dataset": "Dreaddit",
+      "evaluation_split": "official_test",
+      "records": 715,
+      "accuracy": 0.793006993006993,
+      "macro_f1": 0.7904488062988135,
+      "weighted_f1": 0.7911935948341065,
+      "macro_precision": 0.8006896551724139,
+      "macro_recall": 0.7902705327631311,
+      "non_stress_f1": 0.7672955974842768,
+      "stress_f1": 0.8136020151133502,
+      "confusion_matrix": [
+        [
+          244,
+          102
+        ],
+        [
+          46,
+          323
+        ]
+      ],
+      "true_negatives": 244,
+      "false_positives": 102,
+      "false_negatives": 46,
+      "true_positives": 323,
+      "mean_confidence": 0.8481281399726868,
+      "median_confidence": 0.898944079875946,
+      "confidence_p25": 0.7849768400192261,
+      "confidence_p75": 0.9414660930633545,
+      "confidence_p95": 0.9603685140609741,
+      "per_class": [
+        {
+          "class": "non_stress",
+          "precision": 0.8413793103448276,
+          "recall": 0.7052023121387283,
+          "f1": 0.7672955974842768,
+          "support": 346,
+          "predicted_count": 290
+        },
+        {
+          "class": "stress",
+          "precision": 0.76,
+          "recall": 0.8753387533875339,
+          "f1": 0.8136020151133502,
+          "support": 369,
+          "predicted_count": 425
+        }
+      ]
+    },
+    "stress\\dreaddit_distilbert\\validation_analysis\\validation_summary.json": {
+      "records": 568,
+      "accuracy": 0.7922535211267606,
+      "macro_f1": 0.7886664900929534,
+      "weighted_f1": 0.7900237450787183,
+      "macro_precision": 0.8004568106312293,
+      "macro_recall": 0.7877454635843897,
+      "non_stress_f1": 0.7611336032388664,
+      "stress_f1": 0.8161993769470405,
+      "confusion_matrix": [
+        [
+          188,
+          82
+        ],
+        [
+          36,
+          262
+        ]
+      ],
+      "false_positives": 82,
+      "false_negatives": 36,
+      "true_negatives": 188,
+      "true_positives": 262,
+      "mean_confidence": 0.8459969162940979,
+      "median_confidence": 0.8950636386871338,
+      "confidence_p25": 0.7875633835792542,
+      "confidence_p75": 0.9437118172645569,
+      "confidence_p95": 0.9595382213592529,
+      "per_class": [
+        {
+          "class": "non_stress",
+          "precision": 0.8392857142857143,
+          "recall": 0.6962962962962963,
+          "f1": 0.7611336032388664,
+          "support": 270,
+          "predicted_count": 224
+        },
+        {
+          "class": "stress",
+          "precision": 0.7616279069767442,
+          "recall": 0.8791946308724832,
+          "f1": 0.8161993769470405,
+          "support": 298,
+          "predicted_count": 344
+        }
+      ]
+    },
+    "vad\\lexicon_validation_summary.json": {
+      "module_name": "Valence-Arousal-Dominance Analysis",
+      "module_version": "1.0.0",
+      "lexicon_name": "NRC VAD Lexicon",
+      "lexicon_version": "2.1",
+      "timestamp_utc": "2026-11-23T21:04:45.462891+00:00",
+      "dataset_path": "D:\\Projects\\4AiMentalWellnessPeerSupport\\datasets\\processed\\nrc_vad\\standardized\\nrc_vad.csv",
+      "total_rows": 54800,
+      "expected_rows": 54800,
+      "row_count_matches_expected": true,
+      "unique_terms": 54800,
+      "term_statistics": {
+        "missing_terms": 0,
+        "non_string_terms": 0,
+        "empty_terms": 0,
+        "duplicate_normalized_terms": 0,
+        "unique_terms": 54800
+      },
+      "score_statistics": {
+        "valence": {
+          "minimum": -1.0,
+          "maximum": 1.0,
+          "mean": -0.001362,
+          "standard_deviation": 0.476609
+        },
+        "arousal": {
+          "minimum": -1.0,
+          "maximum": 1.0,
+          "mean": 0.01842,
+          "standard_deviation": 0.463864
+        },
+        "dominance": {
+          "minimum": -1.0,
+          "maximum": 1.0,
+          "mean": 0.044617,
+          "standard_deviation": 0.414248
+        }
+      },
+      "term_type_statistics": {
+        "missing_term_types": 0,
+        "term_type_distribution": {
+          "multi_word": 10073,
+          "unigram": 44727
+        }
+      },
+      "term_structure": {
+        "single_token_terms": 44727,
+        "multiword_terms": 10073
+      },
+      "validation_status": "PASSED",
+      "clinical_diagnosis": false,
+      "actual_psychological_state_confirmed": false
+    },
+    "vad\\module_validation\\vad_module_validation_summary.json": {
+      "module_name": "Valence-Arousal-Dominance Analysis",
+      "module_version": "1.0.0",
+      "total_checks": 22,
+      "passed_checks": 22,
+      "failed_checks": 0,
+      "validation_status": "PASSED",
+      "checks": [
+        {
+          "check": "Configuration validation",
+          "passed": true,
+          "details": ""
+        },
+        {
+          "check": "Lexicon row count",
+          "passed": true,
+          "details": "Loaded 54,800 entries"
+        },
+        {
+          "check": "Unique lexicon terms",
+          "passed": true,
+          "details": "Unique terms: 54,800"
+        },
+        {
+          "check": "Lookup dictionary size",
+          "passed": true,
+          "details": "Lookup entries: 54,800"
+        },
+        {
+          "check": "Lexicon score ranges",
+          "passed": true,
+          "details": ""
+        },
+        {
+          "check": "Multiword entries retained",
+          "passed": true,
+          "details": "Multiword entries: 10,073"
+        },
+        {
+          "check": "Contraction-preserving tokenization",
+          "passed": true,
+          "details": "Tokens: ['i', \"don't\", 'feel', 'happy', 'today']"
+        },
+        {
+          "check": "Zero-vector classification",
+          "passed": true,
+          "details": "Zero-valued terms are recognized."
+        },
+        {
+          "check": "Zero-vector exclusion from averaging",
+          "passed": true,
+          "details": "Calculated valence: 0.985"
+        },
+        {
+          "check": "Longest-match-first phrase handling",
+          "passed": true,
+          "details": "Matched terms: ['fear of failure']"
+        },
+        {
+          "check": "Real-text analysis execution",
+          "passed": true,
+          "details": "Matched terms: 9"
+        },
+        {
+          "check": "Three VAD output dimensions",
+          "passed": true,
+          "details": "{'valence': 0.2088, 'arousal': 0.2313, 'dominance': 0.117}"
+        },
+        {
+          "check": "Coverage range",
+          "passed": true,
+          "details": "Coverage: 75.00%"
+        },
+        {
+          "check": "Zero-vector accounting",
+          "passed": true,
+          "details": ""
+        },
+        {
+          "check": "Matched terms retained in output",
+          "passed": true,
+          "details": ""
+        },
+        {
+          "check": "Unmatched tokens retained",
+          "passed": true,
+          "details": ""
+        },
+        {
+          "check": "No-match handling",
+          "passed": true,
+          "details": "Unavailable scores are returned as None."
+        },
+        {
+          "check": "No clinical diagnosis claim",
+          "passed": true,
+          "details": ""
+        },
+        {
+          "check": "No confirmed psychological-state claim",
+          "passed": true,
+          "details": ""
+        },
+        {
+          "check": "Disclaimer included",
+          "passed": true,
+          "details": ""
+        },
+        {
+          "check": "Empty text rejected",
+          "passed": true,
+          "details": ""
+        },
+        {
+          "check": "Non-string input rejected",
+          "passed": true,
+          "details": ""
+        }
+      ],
+      "clinical_validation": false,
+      "real_world_accuracy_established": false
+    }
+  }
+}

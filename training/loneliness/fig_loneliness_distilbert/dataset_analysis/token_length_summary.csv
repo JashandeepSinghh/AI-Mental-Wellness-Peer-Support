@@ -1,0 +1,4 @@
+split,records,minimum_tokens,maximum_tokens,mean_tokens,median_tokens,p75_tokens,p90_tokens,p95_tokens,p99_tokens
+train,3943,27,3614,178.5671,122.0,212.0,356.0,499.9,921.38
+validation,1126,14,3248,169.2975,119.0,204.0,344.0,460.5,825.25
+test,564,27,1731,168.8085,111.5,210.0,344.1,484.7,886.0

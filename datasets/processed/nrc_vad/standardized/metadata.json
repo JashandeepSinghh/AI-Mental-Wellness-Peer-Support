@@ -1,0 +1,40 @@
+{
+    "dataset_name": "NRC VAD Lexicon",
+    "version": "2.1",
+    "total_records": 54800,
+    "unique_terms": 54800,
+    "columns": [
+        "term",
+        "term_type",
+        "valence",
+        "arousal",
+        "dominance"
+    ],
+    "term_types": {
+        "unigram": 44727,
+        "multi_word": 10073
+    },
+    "score_dimensions": {
+        "valence": {
+            "minimum": -1.0,
+            "maximum": 1.0
+        },
+        "arousal": {
+            "minimum": -1.0,
+            "maximum": 1.0
+        },
+        "dominance": {
+            "minimum": -1.0,
+            "maximum": 1.0
+        }
+    },
+    "model_input": "term",
+    "output_dimensions": [
+        "valence",
+        "arousal",
+        "dominance"
+    ],
+    "resource_type": "Lexicon-based VAD analysis",
+    "license": "CC BY-NC 4.0",
+    "usage": "Non-commercial research and educational use with attribution"
+}

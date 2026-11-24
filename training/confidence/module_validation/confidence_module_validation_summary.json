@@ -1,0 +1,83 @@
+{
+    "module_name": "Confidence and Uncertainty Estimation",
+    "module_version": "1.0.0",
+    "total_checks": 14,
+    "passed": 14,
+    "failed": 0,
+    "status": "PASSED",
+    "calibration_status": "not_calibrated",
+    "clinical_certainty_established": false,
+    "safety_probability_available": false,
+    "validation_results": [
+        {
+            "check": "Configuration validation",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "check": "Eight analytical modules registered",
+            "passed": true,
+            "detail": "Registered modules: 8"
+        },
+        {
+            "check": "Calibration correctly marked unavailable",
+            "passed": true,
+            "detail": "Status: not_calibrated"
+        },
+        {
+            "check": "Mathematical engine smoke validation",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "check": "Multi-class confidence calculation",
+            "passed": true,
+            "detail": "Prediction: negative"
+        },
+        {
+            "check": "Multi-label confidence calculation",
+            "passed": true,
+            "detail": "Labels analyzed: 3"
+        },
+        {
+            "check": "Aggregator smoke validation",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "check": "All eight modules aggregated",
+            "passed": true,
+            "detail": "Evaluated: 8/8"
+        },
+        {
+            "check": "No artificial overall confidence",
+            "passed": true,
+            "detail": "Overall confidence remains unavailable."
+        },
+        {
+            "check": "All modules marked evaluated",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "check": "Risk review status propagated",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "check": "No safety probability exposed",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "check": "No clinical certainty claim",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "check": "Missing risk evaluation does not imply safety",
+            "passed": true,
+            "detail": ""
+        }
+    ]
+}

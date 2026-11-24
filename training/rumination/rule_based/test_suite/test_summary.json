@@ -1,0 +1,52 @@
+{
+    "module": "Rumination Detection",
+    "test_count": 26,
+    "metrics": {
+        "true_positive": 8,
+        "true_negative": 14,
+        "false_positive": 0,
+        "false_negative": 0,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0
+    },
+    "group_results": {
+        "positive": {
+            "total": 8,
+            "passed": 8,
+            "failed": 0,
+            "errors": 0
+        },
+        "negative": {
+            "total": 6,
+            "passed": 6,
+            "failed": 0,
+            "errors": 0
+        },
+        "negation": {
+            "total": 4,
+            "passed": 4,
+            "failed": 0,
+            "errors": 0
+        },
+        "third_person": {
+            "total": 4,
+            "passed": 4,
+            "failed": 0,
+            "errors": 0
+        },
+        "ambiguous": {
+            "total": 4,
+            "passed": 0,
+            "failed": 0,
+            "errors": 0
+        }
+    },
+    "limitations": [
+        "Test examples are manually constructed.",
+        "Metrics do not establish clinical validity.",
+        "Ambiguous examples are excluded from binary metrics.",
+        "The test set is small and not representative of real users."
+    ]
+}

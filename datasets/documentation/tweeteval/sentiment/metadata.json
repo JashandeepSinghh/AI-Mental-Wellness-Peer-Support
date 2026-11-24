@@ -1,0 +1,89 @@
+
+{
+    "dataset_name": "TweetEval Sentiment",
+    "project": "AI-Powered Mental Wellness and Peer Support Chatbot",
+    "task": "Three-class sentiment classification",
+    "number_of_classes": 3,
+    "label_mapping": {
+        "0": "negative",
+        "1": "neutral",
+        "2": "positive"
+    },
+    "input_column": "text",
+    "target_column": "label",
+    "descriptive_label_column": "sentiment",
+    "total_records": 59899,
+    "splits": {
+        "training": {
+            "file": "train.csv",
+            "records": 45615,
+            "columns": [
+                "text",
+                "label",
+                "sentiment"
+            ],
+            "duplicate_text_records": 29,
+            "class_distribution": {
+                "negative": 7093,
+                "neutral": 20673,
+                "positive": 17849
+            }
+        },
+        "validation": {
+            "file": "validation.csv",
+            "records": 2000,
+            "columns": [
+                "text",
+                "label",
+                "sentiment"
+            ],
+            "duplicate_text_records": 0,
+            "class_distribution": {
+                "negative": 312,
+                "neutral": 869,
+                "positive": 819
+            }
+        },
+        "testing": {
+            "file": "test.csv",
+            "records": 12284,
+            "columns": [
+                "text",
+                "label",
+                "sentiment"
+            ],
+            "duplicate_text_records": 0,
+            "class_distribution": {
+                "negative": 3972,
+                "neutral": 5937,
+                "positive": 2375
+            }
+        }
+    },
+    "preprocessing": [
+        "Official training, validation and testing splits retained.",
+        "Leading and trailing whitespace removed using strip().",
+        "Internal text content preserved.",
+        "Numeric sentiment labels preserved.",
+        "Numeric labels mapped to sentiment names.",
+        "Missing and empty text checked.",
+        "Invalid labels checked.",
+        "Duplicate records preserved."
+    ],
+    "known_limitations": [
+        "Training data contains duplicate tweet records.",
+        "Three duplicate text groups have conflicting sentiment annotations.",
+        "The official test distribution differs from the training distribution.",
+        "Sentiment annotations are not clinical or psychological diagnoses."
+    ],
+    "cross_split_identical_texts": {
+        "training_vs_validation": 0,
+        "training_vs_testing": 0,
+        "validation_vs_testing": 0
+    },
+    "license": "CC BY 3.0 (TweetEval sentiment subset repository materials)",
+    "license_url": "https://creativecommons.org/licenses/by/3.0/",
+    "license_note": "Provide appropriate attribution for the TweetEval sentiment subset. Underlying Twitter content remains subject to applicable platform terms and third-party rights. The repository license does not automatically grant unrestricted redistribution rights to tweet content.",
+    "documentation_generated": "2026-11-20T05:28:57"
+}
+

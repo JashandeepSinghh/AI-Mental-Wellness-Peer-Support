@@ -1,0 +1,15 @@
+{
+    "records": 2000,
+    "checkpoint_epoch": 2,
+    "checkpoint_validation_macro_f1": 0.6678100886940802,
+    "accuracy": 0.695,
+    "macro_f1": 0.6678100886940802,
+    "weighted_f1": 0.6942169199693206,
+    "macro_precision": 0.6734364855610279,
+    "macro_recall": 0.6631245571118989,
+    "mean_confidence": 0.7075619101524353,
+    "median_confidence": 0.7049782872200012,
+    "confidence_p25": 0.5710456371307373,
+    "confidence_p75": 0.847528338432312,
+    "confidence_p95": 0.9555874466896057
+}

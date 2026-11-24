@@ -1,0 +1,4 @@
+label_id,sentiment,actual_count,actual_percentage,predicted_count,predicted_percentage
+0,negative,312,15.6,326,16.3
+1,neutral,869,43.45,867,43.35
+2,positive,819,40.949999999999996,807,40.35

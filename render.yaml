@@ -1,0 +1,29 @@
+# Render Blueprint for MindBridge AI Mental Wellness Platform
+# Unified Docker Architecture: React SPA Frontend + FastAPI ML Backend + Nginx Reverse Proxy
+services:
+  - type: web
+    name: mindbridge
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: standard # 2 CPU, 4 GB RAM (Required for hosting the 8 ML analysis modules: ~2.2 GB RAM footprint)
+    region: oregon
+    healthCheckPath: /api/v1/health
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: ENVIRONMENT
+        value: production
+      - key: DEBUG
+        value: "false"
+      - key: SECRET_KEY
+        generateValue: true
+      - key: INFERENCE_DEVICE
+        value: cpu
+      - key: MODEL_LOAD_ON_STARTUP
+        value: "false"
+      - key: STORE_CONVERSATIONS
+        value: "false"
+      - key: STORE_ANALYTICS
+        value: "false"
+      - key: LOG_LEVEL
+        value: INFO

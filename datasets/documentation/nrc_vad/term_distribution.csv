@@ -1,0 +1,4 @@
+term_type,count,percentage
+unigram,44727,81.62
+multi_word,10073,18.38
+total,54800,100.0

@@ -1,0 +1,16 @@
+{
+    "validation_records": 2000,
+    "accuracy": 0.738,
+    "macro_f1": 0.7198019524364089,
+    "weighted_f1": 0.7384892507545403,
+    "macro_precision": 0.7174307321673323,
+    "macro_recall": 0.7224101496253396,
+    "mean_prediction_confidence": 0.8286603689193726,
+    "median_prediction_confidence": 0.8818546533584595,
+    "confidence_percentiles": {
+        "p25": 0.7108051180839539,
+        "p50": 0.8818546533584595,
+        "p75": 0.9654349684715271,
+        "p95": 0.990976095199585
+    }
+}

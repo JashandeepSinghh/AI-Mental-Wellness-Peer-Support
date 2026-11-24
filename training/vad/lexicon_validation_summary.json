@@ -1,0 +1,53 @@
+{
+    "module_name": "Valence-Arousal-Dominance Analysis",
+    "module_version": "1.0.0",
+    "lexicon_name": "NRC VAD Lexicon",
+    "lexicon_version": "2.1",
+    "timestamp_utc": "2026-11-24T00:18:33.114848+00:00",
+    "dataset_path": "D:\\Projects\\4AiMentalWellnessPeerSupport\\datasets\\processed\\nrc_vad\\standardized\\nrc_vad.csv",
+    "total_rows": 54800,
+    "expected_rows": 54800,
+    "row_count_matches_expected": true,
+    "unique_terms": 54800,
+    "term_statistics": {
+        "missing_terms": 0,
+        "non_string_terms": 0,
+        "empty_terms": 0,
+        "duplicate_normalized_terms": 0,
+        "unique_terms": 54800
+    },
+    "score_statistics": {
+        "valence": {
+            "minimum": -1.0,
+            "maximum": 1.0,
+            "mean": -0.001362,
+            "standard_deviation": 0.476609
+        },
+        "arousal": {
+            "minimum": -1.0,
+            "maximum": 1.0,
+            "mean": 0.01842,
+            "standard_deviation": 0.463864
+        },
+        "dominance": {
+            "minimum": -1.0,
+            "maximum": 1.0,
+            "mean": 0.044617,
+            "standard_deviation": 0.414248
+        }
+    },
+    "term_type_statistics": {
+        "missing_term_types": 0,
+        "term_type_distribution": {
+            "multi_word": 10073,
+            "unigram": 44727
+        }
+    },
+    "term_structure": {
+        "single_token_terms": 44727,
+        "multiword_terms": 10073
+    },
+    "validation_status": "PASSED",
+    "clinical_diagnosis": false,
+    "actual_psychological_state_confirmed": false
+}

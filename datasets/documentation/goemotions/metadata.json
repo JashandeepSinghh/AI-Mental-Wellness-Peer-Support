@@ -1,0 +1,120 @@
+{
+    "dataset_name": "GoEmotions",
+    "project": "AI-Powered Mental Wellness and Peer Support Chatbot",
+    "task": "Multi-label emotion classification",
+    "number_of_emotion_categories": 28,
+    "emotion_labels": [
+        "admiration",
+        "amusement",
+        "anger",
+        "annoyance",
+        "approval",
+        "caring",
+        "confusion",
+        "curiosity",
+        "desire",
+        "disappointment",
+        "disapproval",
+        "disgust",
+        "embarrassment",
+        "excitement",
+        "fear",
+        "gratitude",
+        "grief",
+        "joy",
+        "love",
+        "nervousness",
+        "optimism",
+        "pride",
+        "realization",
+        "relief",
+        "remorse",
+        "sadness",
+        "surprise",
+        "neutral"
+    ],
+    "input_columns": [
+        "text",
+        "comment_id"
+    ],
+    "output_columns": [
+        "admiration",
+        "amusement",
+        "anger",
+        "annoyance",
+        "approval",
+        "caring",
+        "confusion",
+        "curiosity",
+        "desire",
+        "disappointment",
+        "disapproval",
+        "disgust",
+        "embarrassment",
+        "excitement",
+        "fear",
+        "gratitude",
+        "grief",
+        "joy",
+        "love",
+        "nervousness",
+        "optimism",
+        "pride",
+        "realization",
+        "relief",
+        "remorse",
+        "sadness",
+        "surprise",
+        "neutral"
+    ],
+    "total_records": 54263,
+    "splits": {
+        "training": {
+            "file": "train_cleaned.csv",
+            "records": 43410,
+            "columns": 30,
+            "emotion_categories": 28,
+            "duplicate_comment_ids": 0,
+            "duplicate_text_records": 183
+        },
+        "validation": {
+            "file": "validation_cleaned.csv",
+            "records": 5426,
+            "columns": 30,
+            "emotion_categories": 28,
+            "duplicate_comment_ids": 0,
+            "duplicate_text_records": 3
+        },
+        "testing": {
+            "file": "test_cleaned.csv",
+            "records": 5427,
+            "columns": 30,
+            "emotion_categories": 28,
+            "duplicate_comment_ids": 0,
+            "duplicate_text_records": 6
+        }
+    },
+    "preprocessing": [
+        "Official train, validation and test splits retained.",
+        "Numeric emotion IDs converted into emotion names.",
+        "Multi-label annotations converted into binary vectors.",
+        "Missing and empty text checked.",
+        "Missing comment IDs checked.",
+        "Duplicate comment IDs checked.",
+        "Records without emotion labels checked.",
+        "Original text preserved without normalization."
+    ],
+    "known_limitations": [
+        "Some identical normalized texts occur across official splits under different comment IDs.",
+        "Duplicate text records were preserved to maintain official benchmark splits.",
+        "Emotion labels represent dataset annotations and are not clinical diagnoses.",
+        "Dataset annotations may contain subjectivity and class imbalance."
+    ],
+    "license_note": "Check the upstream repository's license and terms before redistribution or use outside the permitted scope.",
+    "documentation_generated": "2026-11-20T05:21:07",
+    "cross_split_identical_text_counts": {
+        "training_vs_validation": 46,
+        "training_vs_testing": 37,
+        "validation_vs_testing": 11
+    }
+}

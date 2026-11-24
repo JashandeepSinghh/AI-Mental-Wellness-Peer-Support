@@ -1,0 +1,7 @@
+split,label,count,percentage
+train,0,2103,53.335
+train,1,1840,46.665
+validation,0,590,52.3979
+validation,1,536,47.6021
+test,0,307,54.4326
+test,1,257,45.5674

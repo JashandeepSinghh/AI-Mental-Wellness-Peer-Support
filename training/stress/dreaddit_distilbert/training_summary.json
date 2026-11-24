@@ -1,0 +1,13 @@
+{
+    "model": "DistilBERT",
+    "dataset": "Dreaddit",
+    "best_epoch": 2,
+    "best_validation_macro_f1": 0.7886664900929534,
+    "epochs_completed": 4,
+    "total_optimizer_steps": 284,
+    "total_training_duration_seconds": 40.06,
+    "peak_gpu_memory_gb": 1.931,
+    "device": "cuda",
+    "fp16_enabled": true,
+    "checkpoint": "D:\\Projects\\4AiMentalWellnessPeerSupport\\models\\stress\\dreaddit_distilbert\\best_checkpoint\\best_checkpoint.pt"
+}

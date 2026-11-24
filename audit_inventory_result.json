@@ -1,0 +1,1173 @@
+{
+  "directory_tree": {
+    ".": {
+      "dirs": [
+        ".github",
+        ".vscode",
+        "backend",
+        "config",
+        "datasets",
+        "evaluation",
+        "frontend",
+        "logs",
+        "models",
+        "scripts",
+        "tests",
+        "training"
+      ],
+      "files": [
+        ".dockerignore",
+        ".gitignore",
+        "alembic.ini",
+        "check_training_environment.py",
+        "docker-compose.yml",
+        "inspect_checkpoints.py",
+        "live_inference_result.json",
+        "PROJECT_PROGRESS.md",
+        "pytest.ini",
+        "README.md",
+        "test_all_models.py",
+        "test_all_transformers.py",
+        "test_confidence_integration.py",
+        "test_emotion_loading.py",
+        "test_inference_pipeline.py",
+        "test_loneliness_loading.py",
+        "test_sentiment_loading.py",
+        "test_stress_loading.py",
+        "validate_credential_data.py",
+        "verify_credential_migration.py",
+        "verify_credential_schema.py",
+        "verify_database_backup.py",
+        "verify_ml_dependencies.py",
+        "verify_pytorch_gpu.py"
+      ]
+    },
+    ".github": {
+      "dirs": [
+        "workflows"
+      ],
+      "files": []
+    },
+    ".github\\workflows": {
+      "dirs": [],
+      "files": [
+        "ci.yml"
+      ]
+    },
+    ".vscode": {
+      "dirs": [],
+      "files": [
+        "settings.json"
+      ]
+    },
+    "backend": {
+      "dirs": [
+        "app",
+        "data",
+        "tests"
+      ],
+      "files": [
+        ".env",
+        ".env.example",
+        "Dockerfile",
+        "requirements.txt"
+      ]
+    },
+    "backend\\app": {
+      "dirs": [
+        "api",
+        "auth",
+        "core",
+        "database",
+        "inference",
+        "safety",
+        "schemas",
+        "services",
+        "utils"
+      ],
+      "files": [
+        "main.py",
+        "__init__.py"
+      ]
+    },
+    "backend\\data": {
+      "dirs": [],
+      "files": [
+        "mental_wellness.db",
+        "mental_wellness.db-shm",
+        "mental_wellness.db-wal",
+        "mental_wellness_backup_before_schema_changes.db",
+        "wellness_platform.db",
+        "wellness_platform.db-shm",
+        "wellness_platform.db-wal"
+      ]
+    },
+    "backend\\tests": {
+      "dirs": [],
+      "files": [
+        "test_chat_routes.py",
+        "test_chat_schema.py",
+        "test_exception_handlers.py",
+        "test_main_api.py",
+        "__init__.py"
+      ]
+    },
+    "config": {
+      "dirs": [],
+      "files": [
+        "dreaddit_config.py",
+        "goemotions_config.py",
+        "tweeteval_bilstm_config.py",
+        "tweeteval_config.py"
+      ]
+    },
+    "datasets": {
+      "dirs": [
+        "documentation",
+        "external",
+        "models",
+        "processed",
+        "raw"
+      ],
+      "files": []
+    },
+    "datasets\\documentation": {
+      "dirs": [
+        "dreaddit",
+        "fig_loneliness",
+        "goemotions",
+        "nrc_vad",
+        "tweeteval"
+      ],
+      "files": []
+    },
+    "datasets\\external": {
+      "dirs": [],
+      "files": []
+    },
+    "datasets\\models": {
+      "dirs": [
+        "sentiment"
+      ],
+      "files": []
+    },
+    "datasets\\processed": {
+      "dirs": [
+        "dreaddit",
+        "fig_loneliness",
+        "goemotions",
+        "nrc_vad",
+        "tweeteval"
+      ],
+      "files": []
+    },
+    "datasets\\raw": {
+      "dirs": [
+        "dreaddit",
+        "fig_loneliness",
+        "goemotions",
+        "nrc_vad",
+        "tweeteval"
+      ],
+      "files": []
+    },
+    "evaluation": {
+      "dirs": [],
+      "files": []
+    },
+    "frontend": {
+      "dirs": [
+        "dist",
+        "public",
+        "src"
+      ],
+      "files": [
+        "Dockerfile",
+        "index.html",
+        "nginx.conf",
+        "package-lock.json",
+        "package.json",
+        "postcss.config.js",
+        "tailwind.config.js",
+        "test-wellness-services.js",
+        "tsconfig.json",
+        "tsconfig.node.json",
+        "tsconfig.tsbuildinfo",
+        "vite.config.ts"
+      ]
+    },
+    "frontend\\dist": {
+      "dirs": [
+        "assets"
+      ],
+      "files": [
+        "favicon.svg",
+        "index.html"
+      ]
+    },
+    "frontend\\public": {
+      "dirs": [],
+      "files": [
+        "favicon.svg"
+      ]
+    },
+    "frontend\\src": {
+      "dirs": [
+        "components",
+        "context",
+        "features",
+        "services",
+        "types"
+      ],
+      "files": [
+        "App.tsx",
+        "index.css",
+        "main.tsx"
+      ]
+    },
+    "logs": {
+      "dirs": [],
+      "files": [
+        "backend.log"
+      ]
+    },
+    "models": {
+      "dirs": [
+        "confidence",
+        "emotion",
+        "loneliness",
+        "risk_detection",
+        "rumination",
+        "sentiment",
+        "stress",
+        "vad"
+      ],
+      "files": []
+    },
+    "models\\confidence": {
+      "dirs": [],
+      "files": []
+    },
+    "models\\emotion": {
+      "dirs": [
+        "goemotions_distilbert"
+      ],
+      "files": []
+    },
+    "models\\loneliness": {
+      "dirs": [
+        "fig_loneliness_distilbert"
+      ],
+      "files": []
+    },
+    "models\\risk_detection": {
+      "dirs": [],
+      "files": []
+    },
+    "models\\rumination": {
+      "dirs": [],
+      "files": []
+    },
+    "models\\sentiment": {
+      "dirs": [
+        "tweeteval_bilstm",
+        "tweeteval_distilbert"
+      ],
+      "files": []
+    },
+    "models\\stress": {
+      "dirs": [
+        "dreaddit_distilbert"
+      ],
+      "files": []
+    },
+    "models\\vad": {
+      "dirs": [],
+      "files": []
+    },
+    "scripts": {
+      "dirs": [
+        "dataset_preparation",
+        "model_development"
+      ],
+      "files": [
+        "__init__.py"
+      ]
+    },
+    "scripts\\dataset_preparation": {
+      "dirs": [
+        "dreaddit",
+        "fig_loneliness",
+        "goemotions",
+        "nrc_vad",
+        "tweeteval"
+      ],
+      "files": []
+    },
+    "scripts\\model_development": {
+      "dirs": [
+        "confidence",
+        "emotion",
+        "loneliness",
+        "risk",
+        "rumination",
+        "sentiment",
+        "stress",
+        "vad"
+      ],
+      "files": [
+        "__init__.py"
+      ]
+    },
+    "tests": {
+      "dirs": [
+        "integration"
+      ],
+      "files": []
+    },
+    "tests\\integration": {
+      "dirs": [],
+      "files": [
+        "test_api_dependencies.py",
+        "test_consent_api.py",
+        "test_consent_service.py",
+        "test_email_verification_api.py",
+        "test_email_verification_service.py",
+        "test_login_api.py",
+        "test_login_service.py",
+        "test_logout_api.py",
+        "test_logout_service.py",
+        "test_refresh_token_api.py",
+        "test_refresh_token_service.py",
+        "test_registration_api.py",
+        "test_resend_verification_api.py",
+        "test_resend_verification_service.py",
+        "test_supportive_responses_and_safety.py"
+      ]
+    },
+    "training": {
+      "dirs": [
+        "comparison",
+        "confidence",
+        "emotion",
+        "loneliness",
+        "rumination",
+        "sentiment",
+        "stress",
+        "vad"
+      ],
+      "files": []
+    },
+    "training\\comparison": {
+      "dirs": [],
+      "files": []
+    },
+    "training\\confidence": {
+      "dirs": [
+        "module_validation"
+      ],
+      "files": []
+    },
+    "training\\emotion": {
+      "dirs": [
+        "goemotions_distilbert"
+      ],
+      "files": []
+    },
+    "training\\loneliness": {
+      "dirs": [
+        "fig_loneliness_distilbert"
+      ],
+      "files": []
+    },
+    "training\\rumination": {
+      "dirs": [
+        "rule_based",
+        "semantic_validation"
+      ],
+      "files": []
+    },
+    "training\\sentiment": {
+      "dirs": [
+        "tweeteval_bilstm",
+        "tweeteval_distilbert"
+      ],
+      "files": []
+    },
+    "training\\stress": {
+      "dirs": [
+        "dreaddit_distilbert"
+      ],
+      "files": []
+    },
+    "training\\vad": {
+      "dirs": [
+        "module_validation"
+      ],
+      "files": [
+        "lexicon_validation_summary.json"
+      ]
+    }
+  },
+  "models": {
+    "emotion\\goemotions_distilbert\\best_checkpoint\\config.json": {
+      "size_bytes": 1918,
+      "size_mb": 0.0
+    },
+    "emotion\\goemotions_distilbert\\best_checkpoint\\model.safetensors": {
+      "size_bytes": 267912544,
+      "size_mb": 255.5
+    },
+    "emotion\\goemotions_distilbert\\best_checkpoint\\tokenizer.json": {
+      "size_bytes": 711494,
+      "size_mb": 0.68
+    },
+    "emotion\\goemotions_distilbert\\best_checkpoint\\tokenizer_config.json": {
+      "size_bytes": 366,
+      "size_mb": 0.0
+    },
+    "emotion\\goemotions_distilbert\\best_checkpoint\\training_metadata.json": {
+      "size_bytes": 6819,
+      "size_mb": 0.01
+    },
+    "loneliness\\fig_loneliness_distilbert\\best_checkpoint\\best_checkpoint.pt": {
+      "size_bytes": 803595695,
+      "size_mb": 766.37
+    },
+    "loneliness\\fig_loneliness_distilbert\\best_checkpoint\\tokenizer.json": {
+      "size_bytes": 711494,
+      "size_mb": 0.68
+    },
+    "loneliness\\fig_loneliness_distilbert\\best_checkpoint\\tokenizer_config.json": {
+      "size_bytes": 366,
+      "size_mb": 0.0
+    },
+    "sentiment\\tweeteval_bilstm\\best_checkpoint.pt": {
+      "size_bytes": 19454411,
+      "size_mb": 18.55
+    },
+    "sentiment\\tweeteval_bilstm\\vocabulary.json": {
+      "size_bytes": 401077,
+      "size_mb": 0.38
+    },
+    "sentiment\\tweeteval_distilbert\\best_checkpoint\\config.json": {
+      "size_bytes": 837,
+      "size_mb": 0.0
+    },
+    "sentiment\\tweeteval_distilbert\\best_checkpoint\\model.safetensors": {
+      "size_bytes": 267835644,
+      "size_mb": 255.43
+    },
+    "sentiment\\tweeteval_distilbert\\best_checkpoint\\tokenizer.json": {
+      "size_bytes": 711494,
+      "size_mb": 0.68
+    },
+    "sentiment\\tweeteval_distilbert\\best_checkpoint\\tokenizer_config.json": {
+      "size_bytes": 366,
+      "size_mb": 0.0
+    },
+    "sentiment\\tweeteval_distilbert\\best_checkpoint\\training_metadata.json": {
+      "size_bytes": 512,
+      "size_mb": 0.0
+    },
+    "stress\\dreaddit_distilbert\\best_checkpoint\\best_checkpoint.pt": {
+      "size_bytes": 803594863,
+      "size_mb": 766.37
+    },
+    "stress\\dreaddit_distilbert\\best_checkpoint\\tokenizer.json": {
+      "size_bytes": 711494,
+      "size_mb": 0.68
+    },
+    "stress\\dreaddit_distilbert\\best_checkpoint\\tokenizer_config.json": {
+      "size_bytes": 366,
+      "size_mb": 0.0
+    }
+  },
+  "datasets": {
+    "documentation\\dreaddit\\label_distribution.csv": {
+      "size_bytes": 196,
+      "size_mb": 0.0
+    },
+    "documentation\\dreaddit\\metadata.json": {
+      "size_bytes": 2955,
+      "size_mb": 0.0
+    },
+    "documentation\\dreaddit\\README.md": {
+      "size_bytes": 5863,
+      "size_mb": 0.01
+    },
+    "documentation\\fig_loneliness\\label_distribution.csv": {
+      "size_bytes": 244,
+      "size_mb": 0.0
+    },
+    "documentation\\fig_loneliness\\metadata.json": {
+      "size_bytes": 2734,
+      "size_mb": 0.0
+    },
+    "documentation\\fig_loneliness\\README.md": {
+      "size_bytes": 5040,
+      "size_mb": 0.0
+    },
+    "documentation\\goemotions\\label_distribution.csv": {
+      "size_bytes": 2576,
+      "size_mb": 0.0
+    },
+    "documentation\\goemotions\\metadata.json": {
+      "size_bytes": 3543,
+      "size_mb": 0.0
+    },
+    "documentation\\goemotions\\README.md": {
+      "size_bytes": 3856,
+      "size_mb": 0.0
+    },
+    "documentation\\nrc_vad\\metadata.json": {
+      "size_bytes": 3796,
+      "size_mb": 0.0
+    },
+    "documentation\\nrc_vad\\README.md": {
+      "size_bytes": 6183,
+      "size_mb": 0.01
+    },
+    "documentation\\nrc_vad\\score_statistics.csv": {
+      "size_bytes": 347,
+      "size_mb": 0.0
+    },
+    "documentation\\nrc_vad\\term_distribution.csv": {
+      "size_bytes": 92,
+      "size_mb": 0.0
+    },
+    "documentation\\tweeteval\\sentiment\\label_distribution.csv": {
+      "size_bytes": 343,
+      "size_mb": 0.0
+    },
+    "documentation\\tweeteval\\sentiment\\metadata.json": {
+      "size_bytes": 3158,
+      "size_mb": 0.0
+    },
+    "documentation\\tweeteval\\sentiment\\README.md": {
+      "size_bytes": 3961,
+      "size_mb": 0.0
+    },
+    "models\\sentiment\\tweeteval_bilstm\\vocabulary.json": {
+      "size_bytes": 522390,
+      "size_mb": 0.5
+    },
+    "processed\\dreaddit\\cleaned\\test_cleaned.csv": {
+      "size_bytes": 336844,
+      "size_mb": 0.32
+    },
+    "processed\\dreaddit\\cleaned\\train_cleaned.csv": {
+      "size_bytes": 1343043,
+      "size_mb": 1.28
+    },
+    "processed\\dreaddit\\final_splits\\test.csv": {
+      "size_bytes": 343240,
+      "size_mb": 0.33
+    },
+    "processed\\dreaddit\\final_splits\\train.csv": {
+      "size_bytes": 1095595,
+      "size_mb": 1.04
+    },
+    "processed\\dreaddit\\final_splits\\validation.csv": {
+      "size_bytes": 272726,
+      "size_mb": 0.26
+    },
+    "processed\\dreaddit\\standardized\\label_mapping.json": {
+      "size_bytes": 47,
+      "size_mb": 0.0
+    },
+    "processed\\dreaddit\\standardized\\test.csv": {
+      "size_bytes": 343240,
+      "size_mb": 0.33
+    },
+    "processed\\dreaddit\\standardized\\train.csv": {
+      "size_bytes": 1368280,
+      "size_mb": 1.3
+    },
+    "processed\\fig_loneliness\\cleaned\\test_cleaned.csv": {
+      "size_bytes": 454236,
+      "size_mb": 0.43
+    },
+    "processed\\fig_loneliness\\cleaned\\train_cleaned.csv": {
+      "size_bytes": 3350485,
+      "size_mb": 3.2
+    },
+    "processed\\fig_loneliness\\cleaned\\validation_cleaned.csv": {
+      "size_bytes": 906527,
+      "size_mb": 0.86
+    },
+    "processed\\fig_loneliness\\standardized\\label_mapping.json": {
+      "size_bytes": 317,
+      "size_mb": 0.0
+    },
+    "processed\\fig_loneliness\\standardized\\test.csv": {
+      "size_bytes": 460557,
+      "size_mb": 0.44
+    },
+    "processed\\fig_loneliness\\standardized\\train.csv": {
+      "size_bytes": 3394401,
+      "size_mb": 3.24
+    },
+    "processed\\fig_loneliness\\standardized\\validation.csv": {
+      "size_bytes": 919038,
+      "size_mb": 0.88
+    },
+    "processed\\goemotions\\emotion_mapping.txt": {
+      "size_bytes": 379,
+      "size_mb": 0.0
+    },
+    "processed\\goemotions\\test.csv": {
+      "size_bytes": 732537,
+      "size_mb": 0.7
+    },
+    "processed\\goemotions\\train.csv": {
+      "size_bytes": 5883356,
+      "size_mb": 5.61
+    },
+    "processed\\goemotions\\validation.csv": {
+      "size_bytes": 734742,
+      "size_mb": 0.7
+    },
+    "processed\\goemotions\\cleaned\\test_cleaned.csv": {
+      "size_bytes": 732537,
+      "size_mb": 0.7
+    },
+    "processed\\goemotions\\cleaned\\train_cleaned.csv": {
+      "size_bytes": 5883356,
+      "size_mb": 5.61
+    },
+    "processed\\goemotions\\cleaned\\validation_cleaned.csv": {
+      "size_bytes": 734742,
+      "size_mb": 0.7
+    },
+    "processed\\nrc_vad\\cleaned\\nrc_vad_cleaned.csv": {
+      "size_bytes": 1602356,
+      "size_mb": 1.53
+    },
+    "processed\\nrc_vad\\standardized\\metadata.json": {
+      "size_bytes": 933,
+      "size_mb": 0.0
+    },
+    "processed\\nrc_vad\\standardized\\nrc_vad.csv": {
+      "size_bytes": 2070985,
+      "size_mb": 1.98
+    },
+    "processed\\tweeteval\\sentiment\\cleaned\\test_cleaned.csv": {
+      "size_bytes": 1294893,
+      "size_mb": 1.23
+    },
+    "processed\\tweeteval\\sentiment\\cleaned\\train_cleaned.csv": {
+      "size_bytes": 5509235,
+      "size_mb": 5.25
+    },
+    "processed\\tweeteval\\sentiment\\cleaned\\validation_cleaned.csv": {
+      "size_bytes": 242783,
+      "size_mb": 0.23
+    },
+    "processed\\tweeteval\\sentiment\\standardized\\label_mapping.json": {
+      "size_bytes": 68,
+      "size_mb": 0.0
+    },
+    "processed\\tweeteval\\sentiment\\standardized\\test.csv": {
+      "size_bytes": 1294893,
+      "size_mb": 1.23
+    },
+    "processed\\tweeteval\\sentiment\\standardized\\train.csv": {
+      "size_bytes": 5509235,
+      "size_mb": 5.25
+    },
+    "processed\\tweeteval\\sentiment\\standardized\\validation.csv": {
+      "size_bytes": 242783,
+      "size_mb": 0.23
+    },
+    "raw\\dreaddit\\dreaddit-test.csv": {
+      "size_bytes": 759266,
+      "size_mb": 0.72
+    },
+    "raw\\dreaddit\\dreaddit-train.csv": {
+      "size_bytes": 2721684,
+      "size_mb": 2.6
+    },
+    "raw\\dreaddit\\dreaddit.zip": {
+      "size_bytes": 1348791,
+      "size_mb": 1.29
+    },
+    "raw\\fig_loneliness\\source_repo\\.gitattributes": {
+      "size_bytes": 1201,
+      "size_mb": 0.0
+    },
+    "raw\\fig_loneliness\\source_repo\\README.md": {
+      "size_bytes": 8941,
+      "size_mb": 0.01
+    },
+    "raw\\fig_loneliness\\source_repo\\.git\\config": {
+      "size_bytes": 388,
+      "size_mb": 0.0
+    },
+    "raw\\fig_loneliness\\source_repo\\.git\\description": {
+      "size_bytes": 73,
+      "size_mb": 0.0
+    },
+    "raw\\fig_loneliness\\source_repo\\.git\\HEAD": {
+      "size_bytes": 21,
+      "size_mb": 0.0
+    },
+    "raw\\fig_loneliness\\source_repo\\.git\\index": {
+      "size_bytes": 1125,
+      "size_mb": 0.0
+    },
+    "raw\\fig_loneliness\\source_repo\\.git\\packed-refs": {
+      "size_bytes": 112,
+      "size_mb": 0.0
+    },
+    "raw\\fig_loneliness\\source_repo\\.git\\hooks\\applypatch-msg.sample": {
+      "size_bytes": 478,
+      "size_mb": 0.0
+    },
+    "raw\\fig_loneliness\\source_repo\\.git\\hooks\\commit-msg.sample": {
+      "size_bytes": 1972,
+      "size_mb": 0.0
+    },
+    "raw\\fig_loneliness\\source_repo\\.git\\hooks\\fsmonitor-watchman.sample": {
+      "size_bytes": 4611,
+      "size_mb": 0.0
+    },
+    "raw\\fig_loneliness\\source_repo\\.git\\hooks\\post-checkout": {
+      "size_bytes": 360,
+      "size_mb": 0.0
+    },
+    "raw\\fig_loneliness\\source_repo\\.git\\hooks\\post-commit": {
+      "size_bytes": 356,
+      "size_mb": 0.0
+    },
+    "raw\\fig_loneliness\\source_repo\\.git\\hooks\\post-merge": {
+      "size_bytes": 354,
+      "size_mb": 0.0
+    },
+    "raw\\fig_loneliness\\source_repo\\.git\\hooks\\post-update.sample": {
+      "size_bytes": 189,
+      "size_mb": 0.0
+    },
+    "raw\\fig_loneliness\\source_repo\\.git\\hooks\\pre-applypatch.sample": {
+      "size_bytes": 424,
+      "size_mb": 0.0
+    },
+    "raw\\fig_loneliness\\source_repo\\.git\\hooks\\pre-commit.sample": {
+      "size_bytes": 1649,
+      "size_mb": 0.0
+    },
+    "raw\\fig_loneliness\\source_repo\\.git\\hooks\\pre-merge-commit.sample": {
+      "size_bytes": 416,
+      "size_mb": 0.0
+    },
+    "raw\\fig_loneliness\\source_repo\\.git\\hooks\\pre-push": {
+      "size_bytes": 350,
+      "size_mb": 0.0
+    },
+    "raw\\fig_loneliness\\source_repo\\.git\\hooks\\pre-push.sample": {
+      "size_bytes": 1374,
+      "size_mb": 0.0
+    },
+    "raw\\fig_loneliness\\source_repo\\.git\\hooks\\pre-rebase.sample": {
+      "size_bytes": 4898,
+      "size_mb": 0.0
+    },
+    "raw\\fig_loneliness\\source_repo\\.git\\hooks\\pre-receive.sample": {
+      "size_bytes": 544,
+      "size_mb": 0.0
+    },
+    "raw\\fig_loneliness\\source_repo\\.git\\hooks\\prepare-commit-msg.sample": {
+      "size_bytes": 1492,
+      "size_mb": 0.0
+    },
+    "raw\\fig_loneliness\\source_repo\\.git\\hooks\\push-to-checkout.sample": {
+      "size_bytes": 2783,
+      "size_mb": 0.0
+    },
+    "raw\\fig_loneliness\\source_repo\\.git\\hooks\\sendemail-validate.sample": {
+      "size_bytes": 2308,
+      "size_mb": 0.0
+    },
+    "raw\\fig_loneliness\\source_repo\\.git\\hooks\\update.sample": {
+      "size_bytes": 3650,
+      "size_mb": 0.0
+    },
+    "raw\\fig_loneliness\\source_repo\\.git\\info\\exclude": {
+      "size_bytes": 240,
+      "size_mb": 0.0
+    },
+    "raw\\fig_loneliness\\source_repo\\.git\\lfs\\objects\\56\\86\\5686e060c568ff84fe36d152922e355073f5f2f77e9d46051fbfe8792441c241": {
+      "size_bytes": 1036248,
+      "size_mb": 0.99
+    },
+    "raw\\fig_loneliness\\source_repo\\.git\\lfs\\objects\\6c\\06\\6c06db56febb7cbf2852026243e5ca5e7668b90b4f416e47fc946d6deb9c57ae": {
+      "size_bytes": 519992,
+      "size_mb": 0.5
+    },
+    "raw\\fig_loneliness\\source_repo\\.git\\lfs\\objects\\88\\75\\887594289194f8acf93eae851a7b84c5f056db0a38ade3b9a1c7764303f2c72d": {
+      "size_bytes": 3798304,
+      "size_mb": 3.62
+    },
+    "raw\\fig_loneliness\\source_repo\\.git\\logs\\HEAD": {
+      "size_bytes": 221,
+      "size_mb": 0.0
+    },
+    "raw\\fig_loneliness\\source_repo\\.git\\logs\\refs\\heads\\main": {
+      "size_bytes": 221,
+      "size_mb": 0.0
+    },
+    "raw\\fig_loneliness\\source_repo\\.git\\logs\\refs\\remotes\\origin\\HEAD": {
+      "size_bytes": 221,
+      "size_mb": 0.0
+    },
+    "raw\\fig_loneliness\\source_repo\\.git\\objects\\pack\\pack-66de7412bc3e05ec7148884f57692dc238100271.idx": {
+      "size_bytes": 2500,
+      "size_mb": 0.0
+    },
+    "raw\\fig_loneliness\\source_repo\\.git\\objects\\pack\\pack-66de7412bc3e05ec7148884f57692dc238100271.pack": {
+      "size_bytes": 1758470,
+      "size_mb": 1.68
+    },
+    "raw\\fig_loneliness\\source_repo\\.git\\objects\\pack\\pack-66de7412bc3e05ec7148884f57692dc238100271.rev": {
+      "size_bytes": 256,
+      "size_mb": 0.0
+    },
+    "raw\\fig_loneliness\\source_repo\\.git\\refs\\heads\\main": {
+      "size_bytes": 41,
+      "size_mb": 0.0
+    },
+    "raw\\fig_loneliness\\source_repo\\.git\\refs\\remotes\\origin\\HEAD": {
+      "size_bytes": 30,
+      "size_mb": 0.0
+    },
+    "raw\\fig_loneliness\\source_repo\\dev_set\\dataset.arrow": {
+      "size_bytes": 1036248,
+      "size_mb": 0.99
+    },
+    "raw\\fig_loneliness\\source_repo\\dev_set\\dataset_info.json": {
+      "size_bytes": 2178,
+      "size_mb": 0.0
+    },
+    "raw\\fig_loneliness\\source_repo\\dev_set\\state.json": {
+      "size_bytes": 411,
+      "size_mb": 0.0
+    },
+    "raw\\fig_loneliness\\source_repo\\test_set\\dataset.arrow": {
+      "size_bytes": 519992,
+      "size_mb": 0.5
+    },
+    "raw\\fig_loneliness\\source_repo\\test_set\\dataset_info.json": {
+      "size_bytes": 2178,
+      "size_mb": 0.0
+    },
+    "raw\\fig_loneliness\\source_repo\\test_set\\state.json": {
+      "size_bytes": 411,
+      "size_mb": 0.0
+    },
+    "raw\\fig_loneliness\\source_repo\\train_set\\dataset.arrow": {
+      "size_bytes": 3798304,
+      "size_mb": 3.62
+    },
+    "raw\\fig_loneliness\\source_repo\\train_set\\dataset_info.json": {
+      "size_bytes": 2178,
+      "size_mb": 0.0
+    },
+    "raw\\fig_loneliness\\source_repo\\train_set\\state.json": {
+      "size_bytes": 411,
+      "size_mb": 0.0
+    },
+    "raw\\goemotions\\goemotions_1.csv": {
+      "size_bytes": 14174600,
+      "size_mb": 13.52
+    },
+    "raw\\goemotions\\goemotions_2.csv": {
+      "size_bytes": 14173154,
+      "size_mb": 13.52
+    },
+    "raw\\goemotions\\goemotions_3.csv": {
+      "size_bytes": 14395164,
+      "size_mb": 13.73
+    },
+    "raw\\goemotions\\official_splits\\dev.tsv": {
+      "size_bytes": 439059,
+      "size_mb": 0.42
+    },
+    "raw\\goemotions\\official_splits\\emotions.txt": {
+      "size_bytes": 248,
+      "size_mb": 0.0
+    },
+    "raw\\goemotions\\official_splits\\test.tsv": {
+      "size_bytes": 436706,
+      "size_mb": 0.42
+    },
+    "raw\\goemotions\\official_splits\\train.tsv": {
+      "size_bytes": 3519053,
+      "size_mb": 3.36
+    },
+    "raw\\nrc_vad\\nrc_vad_v2.1.zip": {
+      "size_bytes": 6488651,
+      "size_mb": 6.19
+    },
+    "raw\\nrc_vad\\extracted\\NRC-VAD-Lexicon-v2.1\\NRC-VAD-Lexicon-v2.1.txt": {
+      "size_bytes": 1612583,
+      "size_mb": 1.54
+    },
+    "raw\\nrc_vad\\extracted\\NRC-VAD-Lexicon-v2.1\\Paper-Ethics-Sheet-Emotion-Recognition.pdf": {
+      "size_bytes": 319007,
+      "size_mb": 0.3
+    },
+    "raw\\nrc_vad\\extracted\\NRC-VAD-Lexicon-v2.1\\Paper-Practical-Ethical-Considerations-Lexicons.pdf": {
+      "size_bytes": 123332,
+      "size_mb": 0.12
+    },
+    "raw\\nrc_vad\\extracted\\NRC-VAD-Lexicon-v2.1\\Paper-VAD-ACL2018.pdf": {
+      "size_bytes": 174156,
+      "size_mb": 0.17
+    },
+    "raw\\nrc_vad\\extracted\\NRC-VAD-Lexicon-v2.1\\Paper-VAD-v2-2025.pdf": {
+      "size_bytes": 2820467,
+      "size_mb": 2.69
+    },
+    "raw\\nrc_vad\\extracted\\NRC-VAD-Lexicon-v2.1\\README.txt": {
+      "size_bytes": 26089,
+      "size_mb": 0.02
+    },
+    "raw\\nrc_vad\\extracted\\NRC-VAD-Lexicon-v2.1\\MWE\\mwe-arousal-NRC-VAD-Lexicon-v2.1.txt": {
+      "size_bytes": 182704,
+      "size_mb": 0.17
+    },
+    "raw\\nrc_vad\\extracted\\NRC-VAD-Lexicon-v2.1\\MWE\\mwe-dominance-NRC-VAD-Lexicon-v2.1.txt": {
+      "size_bytes": 182428,
+      "size_mb": 0.17
+    },
+    "raw\\nrc_vad\\extracted\\NRC-VAD-Lexicon-v2.1\\MWE\\mwe-NRC-VAD-Lexicon-v2.1.txt": {
+      "size_bytes": 312990,
+      "size_mb": 0.3
+    },
+    "raw\\nrc_vad\\extracted\\NRC-VAD-Lexicon-v2.1\\MWE\\mwe-valence-NRC-VAD-Lexicon-v2.1.txt": {
+      "size_bytes": 182302,
+      "size_mb": 0.17
+    },
+    "raw\\nrc_vad\\extracted\\NRC-VAD-Lexicon-v2.1\\OneFilePerDimension\\arousal-NRC-VAD-Lexicon-v2.1.txt": {
+      "size_bytes": 907434,
+      "size_mb": 0.87
+    },
+    "raw\\nrc_vad\\extracted\\NRC-VAD-Lexicon-v2.1\\OneFilePerDimension\\dominance-NRC-VAD-Lexicon-v2.1.txt": {
+      "size_bytes": 905230,
+      "size_mb": 0.86
+    },
+    "raw\\nrc_vad\\extracted\\NRC-VAD-Lexicon-v2.1\\OneFilePerDimension\\valence-NRC-VAD-Lexicon-v2.1.txt": {
+      "size_bytes": 904749,
+      "size_mb": 0.86
+    },
+    "raw\\nrc_vad\\extracted\\NRC-VAD-Lexicon-v2.1\\OneFilePerDimension\\PolarSubset\\arousal-polar-NRC-VAD-Lexicon-v2.1.txt": {
+      "size_bytes": 454324,
+      "size_mb": 0.43
+    },
+    "raw\\nrc_vad\\extracted\\NRC-VAD-Lexicon-v2.1\\OneFilePerDimension\\PolarSubset\\dominance-polar-NRC-VAD-Lexicon-v2.1.txt": {
+      "size_bytes": 427374,
+      "size_mb": 0.41
+    },
+    "raw\\nrc_vad\\extracted\\NRC-VAD-Lexicon-v2.1\\OneFilePerDimension\\PolarSubset\\valence-polar-NRC-VAD-Lexicon-v2.1.txt": {
+      "size_bytes": 489346,
+      "size_mb": 0.47
+    },
+    "raw\\nrc_vad\\extracted\\NRC-VAD-Lexicon-v2.1\\Unigrams\\unigrams-arousal-NRC-VAD-Lexicon-v2.1.txt": {
+      "size_bytes": 724743,
+      "size_mb": 0.69
+    },
+    "raw\\nrc_vad\\extracted\\NRC-VAD-Lexicon-v2.1\\Unigrams\\unigrams-dominance-NRC-VAD-Lexicon-v2.1.txt": {
+      "size_bytes": 722817,
+      "size_mb": 0.69
+    },
+    "raw\\nrc_vad\\extracted\\NRC-VAD-Lexicon-v2.1\\Unigrams\\unigrams-NRC-VAD-Lexicon-v2.1.txt": {
+      "size_bytes": 1299624,
+      "size_mb": 1.24
+    },
+    "raw\\nrc_vad\\extracted\\NRC-VAD-Lexicon-v2.1\\Unigrams\\unigrams-valence-NRC-VAD-Lexicon-v2.1.txt": {
+      "size_bytes": 722460,
+      "size_mb": 0.69
+    },
+    "raw\\nrc_vad\\extracted\\__MACOSX\\NRC-VAD-Lexicon-v2.1\\._Paper-Ethics-Sheet-Emotion-Recognition.pdf": {
+      "size_bytes": 226,
+      "size_mb": 0.0
+    },
+    "raw\\nrc_vad\\extracted\\__MACOSX\\NRC-VAD-Lexicon-v2.1\\._Paper-Practical-Ethical-Considerations-Lexicons.pdf": {
+      "size_bytes": 170,
+      "size_mb": 0.0
+    },
+    "raw\\nrc_vad\\extracted\\__MACOSX\\NRC-VAD-Lexicon-v2.1\\._Paper-VAD-ACL2018.pdf": {
+      "size_bytes": 226,
+      "size_mb": 0.0
+    },
+    "raw\\nrc_vad\\extracted\\__MACOSX\\NRC-VAD-Lexicon-v2.1\\._Paper-VAD-v2-2025.pdf": {
+      "size_bytes": 226,
+      "size_mb": 0.0
+    },
+    "raw\\tweeteval\\sentiment\\mapping.txt": {
+      "size_bytes": 32,
+      "size_mb": 0.0
+    },
+    "raw\\tweeteval\\sentiment\\test_labels.txt": {
+      "size_bytes": 24568,
+      "size_mb": 0.02
+    },
+    "raw\\tweeteval\\sentiment\\test_text.txt": {
+      "size_bytes": 1156877,
+      "size_mb": 1.1
+    },
+    "raw\\tweeteval\\sentiment\\train_labels.txt": {
+      "size_bytes": 91230,
+      "size_mb": 0.09
+    },
+    "raw\\tweeteval\\sentiment\\train_text.txt": {
+      "size_bytes": 4970029,
+      "size_mb": 4.74
+    },
+    "raw\\tweeteval\\sentiment\\val_labels.txt": {
+      "size_bytes": 4000,
+      "size_mb": 0.0
+    },
+    "raw\\tweeteval\\sentiment\\val_text.txt": {
+      "size_bytes": 219137,
+      "size_mb": 0.21
+    }
+  },
+  "training_scripts": [],
+  "model_development_scripts": [
+    "scripts\\__init__.py",
+    "scripts\\dataset_preparation\\dreaddit\\clean_dreaddit.py",
+    "scripts\\dataset_preparation\\dreaddit\\document_dreaddit.py",
+    "scripts\\dataset_preparation\\dreaddit\\download_dreaddit.py",
+    "scripts\\dataset_preparation\\dreaddit\\inspect_dreaddit.py",
+    "scripts\\dataset_preparation\\dreaddit\\inspect_dreaddit_columns.py",
+    "scripts\\dataset_preparation\\dreaddit\\inspect_dreaddit_edge_cases.py",
+    "scripts\\dataset_preparation\\dreaddit\\quality_check_dreaddit.py",
+    "scripts\\dataset_preparation\\dreaddit\\split_dreaddit.py",
+    "scripts\\dataset_preparation\\dreaddit\\standardize_dreaddit.py",
+    "scripts\\dataset_preparation\\dreaddit\\verify_dreaddit_final_splits.py",
+    "scripts\\dataset_preparation\\dreaddit\\verify_dreaddit_splits.py",
+    "scripts\\dataset_preparation\\fig_loneliness\\clean_fig_loneliness.py",
+    "scripts\\dataset_preparation\\fig_loneliness\\document_fig_loneliness.py",
+    "scripts\\dataset_preparation\\fig_loneliness\\download_fig_loneliness.py",
+    "scripts\\dataset_preparation\\fig_loneliness\\inspect_fig_loneliness.py",
+    "scripts\\dataset_preparation\\fig_loneliness\\inspect_fig_loneliness_edge_cases.py",
+    "scripts\\dataset_preparation\\fig_loneliness\\quality_check_fig_loneliness.py",
+    "scripts\\dataset_preparation\\fig_loneliness\\standardize_fig_loneliness.py",
+    "scripts\\dataset_preparation\\fig_loneliness\\verify_fig_loneliness_splits.py",
+    "scripts\\dataset_preparation\\goemotions\\analyze_goemotions.py",
+    "scripts\\dataset_preparation\\goemotions\\clean_goemotions.py",
+    "scripts\\dataset_preparation\\goemotions\\document_goemotions.py",
+    "scripts\\dataset_preparation\\goemotions\\inspect_goemotions.py",
+    "scripts\\dataset_preparation\\goemotions\\inspect_goemotions_leakage.py",
+    "scripts\\dataset_preparation\\goemotions\\prepare_goemotions_labels.py",
+    "scripts\\dataset_preparation\\goemotions\\quality_check_goemotions.py",
+    "scripts\\dataset_preparation\\goemotions\\verify_goemotions_splits.py",
+    "scripts\\dataset_preparation\\nrc_vad\\clean_nrc_vad.py",
+    "scripts\\dataset_preparation\\nrc_vad\\document_nrc_vad.py",
+    "scripts\\dataset_preparation\\nrc_vad\\inspect_nrc_vad.py",
+    "scripts\\dataset_preparation\\nrc_vad\\inspect_nrc_vad_edge_cases.py",
+    "scripts\\dataset_preparation\\nrc_vad\\quality_check_nrc_vad.py",
+    "scripts\\dataset_preparation\\nrc_vad\\standardize_nrc_vad.py",
+    "scripts\\dataset_preparation\\nrc_vad\\verify_nrc_vad.py",
+    "scripts\\dataset_preparation\\tweeteval\\clean_tweeteval.py",
+    "scripts\\dataset_preparation\\tweeteval\\document_tweeteval.py",
+    "scripts\\dataset_preparation\\tweeteval\\download_tweeteval.py",
+    "scripts\\dataset_preparation\\tweeteval\\inspect_tweeteval.py",
+    "scripts\\dataset_preparation\\tweeteval\\inspect_tweeteval_edge_cases.py",
+    "scripts\\dataset_preparation\\tweeteval\\quality_check_tweeteval.py",
+    "scripts\\dataset_preparation\\tweeteval\\standardize_tweeteval.py",
+    "scripts\\dataset_preparation\\tweeteval\\verify_tweeteval_splits.py",
+    "scripts\\model_development\\__init__.py",
+    "scripts\\model_development\\confidence\\confidence_aggregator.py",
+    "scripts\\model_development\\confidence\\confidence_config.py",
+    "scripts\\model_development\\confidence\\confidence_metrics.py",
+    "scripts\\model_development\\confidence\\validate_confidence_module.py",
+    "scripts\\model_development\\confidence\\__init__.py",
+    "scripts\\model_development\\confidence\\tests\\test_confidence_aggregator.py",
+    "scripts\\model_development\\confidence\\tests\\test_confidence_metrics.py",
+    "scripts\\model_development\\emotion\\analyze_goemotions_validation.py",
+    "scripts\\model_development\\emotion\\evaluate_goemotions_test.py",
+    "scripts\\model_development\\emotion\\goemotions_dataset.py",
+    "scripts\\model_development\\emotion\\goemotions_model.py",
+    "scripts\\model_development\\emotion\\goemotions_trainer.py",
+    "scripts\\model_development\\emotion\\inspect_training_data.py",
+    "scripts\\model_development\\loneliness\\analyze_fig_loneliness_token_lengths.py",
+    "scripts\\model_development\\loneliness\\analyze_fig_loneliness_validation.py",
+    "scripts\\model_development\\loneliness\\evaluate_fig_loneliness_test.py",
+    "scripts\\model_development\\loneliness\\fig_loneliness_dataset.py",
+    "scripts\\model_development\\loneliness\\fig_loneliness_model.py",
+    "scripts\\model_development\\loneliness\\fig_loneliness_trainer.py",
+    "scripts\\model_development\\loneliness\\config\\fig_loneliness_config.py",
+    "scripts\\model_development\\risk\\risk_config.py",
+    "scripts\\model_development\\risk\\risk_context_analyzer.py",
+    "scripts\\model_development\\risk\\risk_conversation_analyzer.py",
+    "scripts\\model_development\\risk\\risk_detector.py",
+    "scripts\\model_development\\risk\\risk_patterns.py",
+    "scripts\\model_development\\risk\\__init__.py",
+    "scripts\\model_development\\risk\\tests\\test_risk_conversation_analyzer.py",
+    "scripts\\model_development\\risk\\tests\\test_risk_detector.py",
+    "scripts\\model_development\\rumination\\rumination_config.py",
+    "scripts\\model_development\\rumination\\rumination_conversation_analyzer.py",
+    "scripts\\model_development\\rumination\\rumination_detector.py",
+    "scripts\\model_development\\rumination\\rumination_patterns.py",
+    "scripts\\model_development\\rumination\\rumination_semantic_similarity.py",
+    "scripts\\model_development\\rumination\\test_rumination_conversation.py",
+    "scripts\\model_development\\rumination\\test_rumination_conversation_edge_cases.py",
+    "scripts\\model_development\\rumination\\test_rumination_detector.py",
+    "scripts\\model_development\\rumination\\test_rumination_semantic_similarity.py",
+    "scripts\\model_development\\rumination\\validate_rumination_module.py",
+    "scripts\\model_development\\rumination\\validate_rumination_similarity_v2.py",
+    "scripts\\model_development\\rumination\\__init__.py",
+    "scripts\\model_development\\sentiment\\analyze_tweeteval_bilstm_validation.py",
+    "scripts\\model_development\\sentiment\\analyze_tweeteval_validation.py",
+    "scripts\\model_development\\sentiment\\evaluate_tweeteval_bilstm_test.py",
+    "scripts\\model_development\\sentiment\\evaluate_tweeteval_test.py",
+    "scripts\\model_development\\sentiment\\inspect_tweeteval_training_data.py",
+    "scripts\\model_development\\sentiment\\tweeteval_bilstm_dataset.py",
+    "scripts\\model_development\\sentiment\\tweeteval_bilstm_model.py",
+    "scripts\\model_development\\sentiment\\tweeteval_bilstm_trainer.py",
+    "scripts\\model_development\\sentiment\\tweeteval_dataset.py",
+    "scripts\\model_development\\sentiment\\tweeteval_model.py",
+    "scripts\\model_development\\sentiment\\tweeteval_trainer.py",
+    "scripts\\model_development\\stress\\analyze_dreaddit_token_lengths.py",
+    "scripts\\model_development\\stress\\analyze_dreaddit_validation.py",
+    "scripts\\model_development\\stress\\dreaddit_dataset.py",
+    "scripts\\model_development\\stress\\dreaddit_model.py",
+    "scripts\\model_development\\stress\\dreaddit_trainer.py",
+    "scripts\\model_development\\stress\\evaluate_dreaddit_test.py",
+    "scripts\\model_development\\stress\\inspect_dreaddit_training_data.py",
+    "scripts\\model_development\\stress\\test_dreaddit_trainer.py",
+    "scripts\\model_development\\vad\\vad_analyzer.py",
+    "scripts\\model_development\\vad\\vad_config.py",
+    "scripts\\model_development\\vad\\vad_lexicon.py",
+    "scripts\\model_development\\vad\\validate_vad_module.py",
+    "scripts\\model_development\\vad\\__init__.py",
+    "scripts\\model_development\\vad\\tests\\test_vad_analyzer.py"
+  ],
+  "tests_dir": [
+    "tests\\integration\\test_api_dependencies.py",
+    "tests\\integration\\test_consent_api.py",
+    "tests\\integration\\test_consent_service.py",
+    "tests\\integration\\test_email_verification_api.py",
+    "tests\\integration\\test_email_verification_service.py",
+    "tests\\integration\\test_login_api.py",
+    "tests\\integration\\test_login_service.py",
+    "tests\\integration\\test_logout_api.py",
+    "tests\\integration\\test_logout_service.py",
+    "tests\\integration\\test_refresh_token_api.py",
+    "tests\\integration\\test_refresh_token_service.py",
+    "tests\\integration\\test_registration_api.py",
+    "tests\\integration\\test_resend_verification_api.py",
+    "tests\\integration\\test_resend_verification_service.py",
+    "tests\\integration\\test_supportive_responses_and_safety.py"
+  ],
+  "backend_tests_dir": [
+    "backend\\tests\\test_chat_routes.py",
+    "backend\\tests\\test_chat_schema.py",
+    "backend\\tests\\test_exception_handlers.py",
+    "backend\\tests\\test_main_api.py",
+    "backend\\tests\\__init__.py"
+  ],
+  "evaluation_dir": []
+}

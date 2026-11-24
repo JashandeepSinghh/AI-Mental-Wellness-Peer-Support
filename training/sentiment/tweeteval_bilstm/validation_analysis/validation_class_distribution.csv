@@ -1,0 +1,4 @@
+sentiment,actual_count,predicted_count,actual_percentage,predicted_percentage
+negative,312,285,15.6,14.249999999999998
+neutral,869,902,43.45,45.1
+positive,819,813,40.949999999999996,40.65

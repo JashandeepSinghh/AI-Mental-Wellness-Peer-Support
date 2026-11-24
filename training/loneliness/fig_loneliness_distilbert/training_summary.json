@@ -1,0 +1,14 @@
+{
+    "status": "completed",
+    "model": "distilbert-base-uncased",
+    "best_epoch": 4,
+    "best_validation_macro_f1": 0.9635243709443322,
+    "epochs_completed": 5,
+    "total_duration_seconds": 139.02763748168945,
+    "max_sequence_length": 384,
+    "training_batch_size": 8,
+    "gradient_accumulation_steps": 4,
+    "effective_batch_size": 32,
+    "learning_rate": 2e-05,
+    "random_seed": 42
+}

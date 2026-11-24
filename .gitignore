@@ -1,0 +1,123 @@
+
+# ============================================================
+# ENVIRONMENT AND SECRETS
+# ============================================================
+
+.env
+.env.*
+!.env.example
+
+# ============================================================
+# PYTHON
+# ============================================================
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+# All virtual environments, including .venv-1 and .venv-2
+.venv*/
+venv*/
+env*/
+
+# Frontend dependencies and build output
+node_modules/
+frontend/node_modules/
+frontend/dist/
+dist/
+
+# Raw and interim datasets
+datasets/raw/
+datasets/interim/
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# ============================================================
+# LOGS
+# ============================================================
+
+*.log
+logs/
+
+# ============================================================
+# MODEL CHECKPOINTS AND GENERATED ARTIFACTS
+# ============================================================
+
+# Hugging Face checkpoints
+models/**/checkpoint-*/
+
+# Large model weights - tracked via Git LFS (.gitattributes)
+!models/**/*.bin
+!models/**/*.safetensors
+!models/**/*.pt
+models/**/*.pth
+models/**/*.ckpt
+
+# ============================================================
+# NOTEBOOKS
+# ============================================================
+
+.ipynb_checkpoints/
+
+# ============================================================
+# EDITORS AND OPERATING SYSTEM
+# ============================================================
+
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ============================================================
+# TEMPORARY FILES
+# ============================================================
+
+*.tmp
+*.temp
+*.bak
+
+# ============================================================
+# SQLITE DATABASE AND SENSITIVE DATABASE FILES
+# ============================================================
+
+backend/data/*.db
+backend/data/*.sqlite
+backend/data/*.sqlite3
+
+# SQLite Write-Ahead Logging files
+backend/data/*.db-wal
+backend/data/*.db-shm
+backend/data/*.sqlite-wal
+backend/data/*.sqlite-shm
+
+# Local database backups
+backend/data/backups/
+
+
+
+# ============================================================
+# GENERATED MACHINE LEARNING OUTPUTS
+# ============================================================
+
+# TensorBoard event files
+training/**/tensorboard/
+events.out.tfevents.*
+
+# Generated prediction arrays
+training/**/test_predictions.npz
+training/**/validation_predictions.npz
+training/**/test_confusion_matrices.npz
+
+# Local inference output
+live_inference_result.json
+
+# Temporary verification scripts
+verify_database_backup.py
+validate_credential_data.py
+verify_credential_schema.py
+verify_credential_migration.py

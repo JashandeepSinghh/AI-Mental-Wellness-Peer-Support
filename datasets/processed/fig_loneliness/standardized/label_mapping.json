@@ -1,0 +1,15 @@
+{
+    "original_encoding": {
+        "[1, 0]": {
+            "label": 0,
+            "loneliness": "non_lonely"
+        },
+        "[0, 1]": {
+            "label": 1,
+            "loneliness": "lonely"
+        }
+    },
+    "model_target": "label",
+    "model_input": "text",
+    "number_of_classes": 2
+}

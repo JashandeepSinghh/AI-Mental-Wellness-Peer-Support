@@ -1,0 +1,114 @@
+{
+    "dataset_name": "NRC Valence-Arousal-Dominance Lexicon",
+    "short_name": "NRC VAD",
+    "version": "2.1",
+    "source": "https://saifmohammad.com/WebPages/nrc-vad.html",
+    "original_source_file": "NRC-VAD-Lexicon-v2.1.txt",
+    "license": "Publisher-defined usage terms (no open redistribution license stated)",
+    "usage_restriction": "Non-commercial research and educational use with appropriate attribution. Redistribution of the lexicon files is not permitted. Commercial use requires separate permission.",
+    "total_records": 54800,
+    "unique_terms": 54800,
+    "term_distribution": {
+        "unigram": 44727,
+        "multi_word": 10073
+    },
+    "columns": [
+        "term",
+        "term_type",
+        "valence",
+        "arousal",
+        "dominance"
+    ],
+    "score_dimensions": {
+        "valence": {
+            "description": "Pleasantness or unpleasantness",
+            "minimum": -1.0,
+            "maximum": 1.0,
+            "mean": -0.0013622262773722638
+        },
+        "arousal": {
+            "description": "Emotional activation or calmness",
+            "minimum": -1.0,
+            "maximum": 1.0,
+            "mean": 0.01841963503649635
+        },
+        "dominance": {
+            "description": "Perceived control or power",
+            "minimum": -1.0,
+            "maximum": 1.0,
+            "mean": 0.044616897810218985
+        }
+    },
+    "score_scale": {
+        "minimum": -1.0,
+        "maximum": 1.0
+    },
+    "project_module": "Valence-Arousal-Dominance Analysis",
+    "resource_type": "Lexicon-based NLP resource",
+    "model_input": "term",
+    "model_outputs": [
+        "valence",
+        "arousal",
+        "dominance"
+    ],
+    "preprocessing": {
+        "original_records": 54801,
+        "removed_records": 1,
+        "final_records": 54800,
+        "removal_reason": "One record contained a missing term.",
+        "duplicate_terms": 0,
+        "missing_scores": 0,
+        "score_range_violations": 0,
+        "capitalization_preserved": true,
+        "punctuation_preserved": true,
+        "multi_word_expressions_preserved": true,
+        "score_precision_preserved": true
+    },
+    "quality_verification": {
+        "standardization_checks_passed": 7,
+        "final_verification_checks_passed": 31,
+        "final_verification_checks_failed": 0
+    },
+    "training_requirement": "This is a lexicon resource, not a supervised training dataset.",
+    "source_metadata": {
+        "dataset_name": "NRC VAD Lexicon",
+        "version": "2.1",
+        "total_records": 54800,
+        "unique_terms": 54800,
+        "columns": [
+            "term",
+            "term_type",
+            "valence",
+            "arousal",
+            "dominance"
+        ],
+        "term_types": {
+            "unigram": 44727,
+            "multi_word": 10073
+        },
+        "score_dimensions": {
+            "valence": {
+                "minimum": -1.0,
+                "maximum": 1.0
+            },
+            "arousal": {
+                "minimum": -1.0,
+                "maximum": 1.0
+            },
+            "dominance": {
+                "minimum": -1.0,
+                "maximum": 1.0
+            }
+        },
+        "model_input": "term",
+        "output_dimensions": [
+            "valence",
+            "arousal",
+            "dominance"
+        ],
+        "resource_type": "Lexicon-based VAD analysis",
+        "license": "Publisher-defined usage terms (no open redistribution license stated)",
+        "usage_restriction": "Non-commercial research and educational use with appropriate attribution. Redistribution of the lexicon files is not permitted. Commercial use requires separate permission."
+    }
+}
+
